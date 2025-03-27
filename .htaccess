@@ -1,0 +1,15 @@
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|css|js|woff2|svg|eot|ttf|otf)$">
+  
+  # La directive <FilesMatch> permet de cibler les fichiers dont les extensions correspondent à un motif donné.
+  # Elle cible les fichiers avec les extensions suivantes :
+  # .jpg, .jpeg, .png, .gif, .webp, .css, .js, .woff2, .svg, .eot, .ttf, .otf.
+  
+  Header set Cache-Control "public, max-age=31536000, immutable"
+  
+  # La directive "Header set" définit un en-tête HTTP pour les fichiers ciblés par <FilesMatch>.
+  # L'en-tête Cache-Control est défini avec les valeurs suivantes :
+  # - "public" : le fichier peut être mis en cache par n'importe quel cache intermédiaire (serveurs proxy, navigateurs, etc.).
+  # - "max-age=31536000" : le fichier peut être mis en cache pendant 1 an (31536000 secondes).
+  # - "immutable" : le fichier ne changera pas pendant la période de cache, donc le cache ne sera pas vérifié pendant cette durée. -->
+
+</FilesMatch>

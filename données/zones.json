@@ -1,0 +1,419 @@
+{
+    "hollow_knight": {
+        "nom": "Hollow Knight",
+        "id": "hollow_knight",
+        "type": "localisation",
+        "favicon": "hollow_knight",
+        "dimensions": {
+            "solution": 1500,
+            "associées_aux_difficultés": [
+                1000,
+                750,
+                500,
+                250
+            ]
+        },
+        "facteur_de_zoom": 0.4,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 200,
+            "seuil_0": 600
+        }
+    },
+    "hollow_knight_areas": {
+        "nom": "Hollow Knight - Areas",
+        "id": "hollow_knight_areas",
+        "type": "quiz",
+        "favicon": "hollow_knight",
+        "facteur_de_zoom": 0.4,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 400,
+            "seuil_0": 600
+        }
+    },
+    "hollow_knight_charms": {
+        "nom": "Hollow Knight - Charms",
+        "id": "hollow_knight_charms",
+        "type": "quiz",
+        "favicon": "hollow_knight",
+        "facteur_de_zoom": 0.4,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 300,
+            "seuil_0": 600
+        }
+    },
+    "hollow_knight_items": {
+        "nom": "Hollow Knight - Items",
+        "id": "hollow_knight_items",
+        "type": "quiz",
+        "favicon": "hollow_knight",
+        "facteur_de_zoom": 0.4,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 300,
+            "seuil_0": 600
+        }
+    },
+    "hollow_knight_boss": {
+        "nom": "Hollow Knight - Boss",
+        "id": "hollow_knight_boss",
+        "type": "quiz",
+        "favicon": "hollow_knight",
+        "facteur_de_zoom": 0.4,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 300,
+            "seuil_0": 600
+        }
+    },
+    "hollow_knight_npc": {
+        "nom": "Hollow Knight - NPCs",
+        "id": "hollow_knight_npc",
+        "type": "quiz",
+        "favicon": "hollow_knight",
+        "facteur_de_zoom": 0.4,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 300,
+            "seuil_0": 600
+        }
+    },
+    "hollow_knight_abyss": {
+        "nom": "Hollow Knight - Abyss",
+        "id": "hollow_knight_abyss",
+        "type": "localisation",
+        "favicon": "hollow_knight",
+        "dimensions": {
+            "solution": 1500,
+            "associées_aux_difficultés": [
+                1000,
+                750,
+                500,
+                250
+            ]
+        },
+        "facteur_de_zoom": 0,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 80,
+            "seuil_0": 250
+        }
+    },
+    "hollow_knight_ancient_basin": {
+        "nom": "Hollow Knight - Ancient Basin",
+        "id": "hollow_knight_ancient_basin",
+        "type": "localisation",
+        "favicon": "hollow_knight",
+        "dimensions": {
+            "solution": 1500,
+            "associées_aux_difficultés": [
+                1000,
+                750,
+                500,
+                250
+            ]
+        },
+        "facteur_de_zoom": 0,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 80,
+            "seuil_0": 250
+        }
+    },
+    "hollow_knight_city_of_tears": {
+        "nom": "Hollow Knight - City of Tears",
+        "id": "hollow_knight_city_of_tears",
+        "type": "localisation",
+        "favicon": "hollow_knight",
+        "dimensions": {
+            "solution": 1500,
+            "associées_aux_difficultés": [
+                1000,
+                750,
+                500,
+                250
+            ]
+        },
+        "facteur_de_zoom": 0,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 80,
+            "seuil_0": 250
+        }
+    },
+    "hollow_knight_crystal_peak": {
+        "nom": "Hollow Knight - Crystal Peak",
+        "id": "hollow_knight_crystal_peak",
+        "type": "localisation",
+        "favicon": "hollow_knight",
+        "dimensions": {
+            "solution": 1500,
+            "associées_aux_difficultés": [
+                1000,
+                750,
+                500,
+                250
+            ]
+        },
+        "facteur_de_zoom": 0,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 80,
+            "seuil_0": 250
+        }
+    },
+    "hollow_knight_deepnest": {
+        "nom": "Hollow Knight - Deepnest",
+        "id": "hollow_knight_deepnest",
+        "type": "localisation",
+        "favicon": "hollow_knight",
+        "dimensions": {
+            "solution": 1500,
+            "associées_aux_difficultés": [
+                1000,
+                750,
+                500,
+                250
+            ]
+        },
+        "facteur_de_zoom": 0,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 80,
+            "seuil_0": 250
+        }
+    },
+    "hollow_knight_dirtmouth": {
+        "nom": "Hollow Knight - Dirtmouth",
+        "id": "hollow_knight_dirtmouth",
+        "type": "localisation",
+        "favicon": "hollow_knight",
+        "dimensions": {
+            "solution": 1500,
+            "associées_aux_difficultés": [
+                1000,
+                750,
+                500,
+                250
+            ]
+        },
+        "facteur_de_zoom": 0,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 80,
+            "seuil_0": 250
+        }
+    },
+    "hollow_knight_fog_canyon": {
+        "nom": "Hollow Knight - Fog Canyon",
+        "id": "hollow_knight_fog_canyon",
+        "type": "localisation",
+        "favicon": "hollow_knight",
+        "dimensions": {
+            "solution": 1500,
+            "associées_aux_difficultés": [
+                1000,
+                750,
+                500,
+                250
+            ]
+        },
+        "facteur_de_zoom": 0,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 80,
+            "seuil_0": 250
+        }
+    },
+    "hollow_knight_forgotten_crossroads": {
+        "nom": "Hollow Knight - Forgotten Crossroads",
+        "id": "hollow_knight_forgotten_crossroads",
+        "type": "localisation",
+        "favicon": "hollow_knight",
+        "dimensions": {
+            "solution": 1500,
+            "associées_aux_difficultés": [
+                1000,
+                750,
+                500,
+                250
+            ]
+        },
+        "facteur_de_zoom": 0,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 80,
+            "seuil_0": 250
+        }
+    },
+    "hollow_knight_fungal_wastes": {
+        "nom": "Hollow Knight - Fungal Wastes",
+        "id": "hollow_knight_fungal_wastes",
+        "type": "localisation",
+        "favicon": "hollow_knight",
+        "dimensions": {
+            "solution": 1500,
+            "associées_aux_difficultés": [
+                1000,
+                750,
+                500,
+                250
+            ]
+        },
+        "facteur_de_zoom": 0,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 80,
+            "seuil_0": 250
+        }
+    },
+    "hollow_knight_greenpath": {
+        "nom": "Hollow Knight - Greenpath",
+        "id": "hollow_knight_greenpath",
+        "type": "localisation",
+        "favicon": "hollow_knight",
+        "dimensions": {
+            "solution": 1500,
+            "associées_aux_difficultés": [
+                1000,
+                750,
+                500,
+                250
+            ]
+        },
+        "facteur_de_zoom": 0,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 80,
+            "seuil_0": 250
+        }
+    },
+    "hollow_knight_hive": {
+        "nom": "Hollow Knight - Hive",
+        "id": "hollow_knight_hive",
+        "type": "localisation",
+        "favicon": "hollow_knight",
+        "dimensions": {
+            "solution": 1500,
+            "associées_aux_difficultés": [
+                1000,
+                750,
+                500,
+                250
+            ]
+        },
+        "facteur_de_zoom": 0,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 80,
+            "seuil_0": 250
+        }
+    },
+    "hollow_knight_howling_cliffs": {
+        "nom": "Hollow Knight - Howling Cliffs",
+        "id": "hollow_knight_howling_cliffs",
+        "type": "localisation",
+        "favicon": "hollow_knight",
+        "dimensions": {
+            "solution": 1500,
+            "associées_aux_difficultés": [
+                1000,
+                750,
+                500,
+                250
+            ]
+        },
+        "facteur_de_zoom": 0,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 80,
+            "seuil_0": 250
+        }
+    },
+    "hollow_knight_kingdom_s_edge": {
+        "nom": "Hollow Knight - Kingdom's Edge",
+        "id": "hollow_knight_kingdom_s_edge",
+        "type": "localisation",
+        "favicon": "hollow_knight",
+        "dimensions": {
+            "solution": 1500,
+            "associées_aux_difficultés": [
+                1000,
+                750,
+                500,
+                250
+            ]
+        },
+        "facteur_de_zoom": 0,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 80,
+            "seuil_0": 250
+        }
+    },
+    "hollow_knight_king_s_pass": {
+        "nom": "Hollow Knight - King's Pass",
+        "id": "hollow_knight_king_s_pass",
+        "type": "localisation",
+        "favicon": "hollow_knight",
+        "dimensions": {
+            "solution": 1500,
+            "associées_aux_difficultés": [
+                1000,
+                750,
+                500,
+                250
+            ]
+        },
+        "facteur_de_zoom": 0,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 80,
+            "seuil_0": 250
+        }
+    },
+    "hollow_knight_silksong_demo_deep_docks": {
+        "nom": "Hollow Knight: Silksong - Deep Docks (Demo)",
+        "id": "hollow_knight_silksong_demo_deep_docks",
+        "type": "localisation",
+        "favicon": "hollow_knight_silksong",
+        "dimensions": {
+            "solution": 975,
+            "associées_aux_difficultés": [
+                650,
+                550,
+                350,
+                250
+            ]
+        },
+        "facteur_de_zoom": 0,
+        "marqueur": "hollow_knight_silksong",
+        "score": {
+            "seuil_100": 150,
+            "seuil_0": 350
+        }
+    },
+    "hollow_knight_silksong_demo_mossy_grotto": {
+        "nom": "Hollow Knight: Silksong - Mossy Grotto (Demo)",
+        "id": "hollow_knight_silksong_demo_mossy_grotto",
+        "type": "localisation",
+        "favicon": "hollow_knight_silksong",
+        "dimensions": {
+            "solution": 975,
+            "associées_aux_difficultés": [
+                750,
+                625,
+                400,
+                275
+            ]
+        },
+        "facteur_de_zoom": 0,
+        "marqueur": "hollow_knight_silksong",
+        "score": {
+            "seuil_100": 150,
+            "seuil_0": 350
+        }
+    }
+}
