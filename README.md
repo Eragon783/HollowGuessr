@@ -18,7 +18,7 @@ Welcome to **HollowGuessr**! Get ready to immerse yourself in the mysterious bea
 - **Enhanced user experience customization**, including zone selection  
 - **Detailed user score statistics** to track your progress  
 - **No loading times** for a seamless experience  
-- **sleek and ergonomic interface** that’s easy on the eyes  
+- A **sleek and ergonomic interface** that’s easy on the eyes  
 - **Fully responsive design**, optimized for all screen sizes, including mobile devices
 
 ## Missing Files
