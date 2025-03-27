@@ -1,8 +1,3 @@
-# Spécifie que les règles suivantes s'appliquent à tous les robots
 User-agent: *
-
-# Autorise l'accès à toutes les pages
 Disallow: 
-
-# Fournit l'URL du sitemap pour aider les moteurs de recherche à indexer le site plus efficacement
 Sitemap: https://hollowguessr.alwaysdata.net/sitemap.xml
