@@ -7,15 +7,11 @@ libwebp/
 # Ignorer les fichiers de projet GIMP
 *.xcf
 
-# Ignorer le fichier PRIVÉ.md
+# Ignorer le fichier PRIVÉ.md pour maintenir la confidentialité
 PRIVÉ.md
 
 # Ignorer toutes les captures d'écran aux formats PNG, WebP et JPG dans tous les sous-dossiers
+# Ignorer également les screenshots de largeur 250 pixels
 images/screenshots/**/screenshot.*
 images/screenshots/**/originaux/
 images/screenshots/**/screenshots_250/
-images/screenshots/**/screenshots_500/
-
-# Différentes exceptions à la règle plus haut
-!images/screenshots/hollow_knight_charms/**
-!images/screenshots/hollow_knight_items/**
