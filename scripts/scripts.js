@@ -295,7 +295,7 @@ function lancer_le_jeu() {
             message_html += " The screenshots are of poor quality, as they come from gameplay videos recorded during the demo presented at E3 2019.";
         }
         if (jeu_sélectionné.startsWith("hollow_knight_npc")) {
-            message_html += " If an NPC is in more than one place in the game, indicate the place where he is most often.";
+            message_html += " If an NPC is to be found in more than one place in the game, indicate the place where the Knight first encounters it.";
         }
         if (jeu_sélectionné.startsWith("hollow_knight_areas")) {
             message_html += " To get the maximum number of points, click on the center of the area.";
