@@ -340,6 +340,9 @@ function lancer_le_jeu() {
         if (jeu_sélectionné.startsWith("hollow_knight_silksong_")) {
             message_html += " The screenshots are of poor quality, as they come from gameplay videos recorded during the demo presented at E3 2019.";
         }
+        if (jeu_sélectionné.startsWith("hollow_knight_boss")) {
+            message_html += " If an boss is to be found in more than one place in the game, indicate the place where the Knight first encounters it.";
+        }
         if (jeu_sélectionné.startsWith("hollow_knight_npc")) {
             message_html += " If an NPC is to be found in more than one place in the game, indicate the place where the Knight first encounters it.";
         }
