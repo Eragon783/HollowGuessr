@@ -30,7 +30,7 @@ function bouton_jeux_change() {
                 url_bouton_dimension += `&dimension_par_défaut=${dimension_par_défaut}`;
             }
         }
-        
+
         localStorage.setItem("zone_par_défaut", jeu_sélectionné);
 
         $("#carte").attr("src", "./images/chargement.gif");
@@ -113,7 +113,7 @@ function confirmer_jeu_clic() {
         $.getJSON(`./scripts/obtenir_localisation.php?zone=${jeu_sélectionné}&fichier=${encodeURIComponent(screenshot.attr("fichier_image_aléatoire"))}`, données => {
             const différence_x = marqueur_réponse.attr("x") - données.x;
             const différence_y = marqueur_réponse.attr("y") - données.y;
-            const distance = Math.abs(différence_x) + Math.abs(différence_y);
+            const distance = Math.sqrt(Math.pow(différence_x, 2) + Math.pow(différence_y, 2));
 
             $.getJSON("./données/zones.json", zone => {
 
@@ -204,6 +204,52 @@ function confirmer_jeu_clic() {
                     class: "élément-éphémère",
                     html: "Continue"
                 }).appendTo("main").on("click", lancer_le_jeu);
+
+                marqueur_solution.on('load', function () {
+                    const cercle_proche = $("<div>", { id: "cercle_proche", class: "élément-éphémère" }).appendTo("#carte-container");
+                    const cercle_loin = $("<div>", { id: "cercle_loin", class: "élément-éphémère" }).appendTo("#carte-container");
+
+                    const echelle = dimensions_carte.width / carte[0].naturalWidth;
+
+                    let rayon_proche = seuil_proche * echelle;
+                    let rayon_loin = seuil_loin * echelle;
+
+                    const containerRect = $("#carte-container")[0].getBoundingClientRect();
+                    const marqueurRect = marqueur_solution[0].getBoundingClientRect();
+
+                    const centre = {
+                        x: marqueurRect.left - containerRect.left + (marqueurRect.width / 2) - 2,
+                        y: marqueurRect.top - containerRect.top + (marqueurRect.height / 2) - 2
+                    };
+
+                    Object.assign(cercle_proche[0].style, {
+                        position: "absolute",
+                        width: `${rayon_proche * 2}px`,
+                        height: `${rayon_proche * 2}px`,
+                        borderRadius: "50%",
+                        border: "3px solid green",
+                        boxSizing: "border-box",
+                        transform: "translate(-50%, -50%)",
+                        top: `${centre.y}px`,
+                        left: `${centre.x}px`,
+                        pointerEvents: "none",
+                        zIndex: 9999
+                    });
+
+                    Object.assign(cercle_loin[0].style, {
+                        position: "absolute",
+                        width: `${rayon_loin * 2}px`,
+                        height: `${rayon_loin * 2}px`,
+                        borderRadius: "50%",
+                        border: "3px solid red",
+                        boxSizing: "border-box",
+                        transform: "translate(-50%, -50%)",
+                        top: `${centre.y}px`,
+                        left: `${centre.x}px`,
+                        pointerEvents: "none",
+                        zIndex: 9998
+                    });
+                })
             })
 
         }).fail((_, statut, erreur) => console.error("Erreur:", statut, erreur));
