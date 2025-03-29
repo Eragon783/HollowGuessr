@@ -41,23 +41,13 @@
     <header>
         <img src="./images/ui/1_haut.webp" alt="Top decoration, type 1" loading="lazy">
         <h1>HollowGuessr</h1>
-        <p>
-            Welcome to HollowGuessr!
-            <img class="emote" src="./images/emotes/hornet_hi.webp" alt="Emote Hornet hi" loading="lazy">
-            Get ready to immerse yourself in the mysterious beauty of Hallownest (and a touch of Pharloom), in this fun game inspired by Hollow Knight and GeoGuessr! Your quest is simple: figure out where you are by carefully observing the clues around you. The more precise your guess, the more points you'll rack up!
-            <img class="emote" src="./images/emotes/knight_money.webp" alt="Emote Knight money" loading="lazy"><br>
-            Think you can spot every hidden corner of the kingdom? Enjoy the adventure, and happy exploring!
-            <img class="emote" src="./images/emotes/knight_giggle.webp" alt="Emote Knight giggle" loading="lazy">
-        </p>
+        <p data-i18n="accueil-texte"></p>
         <img src="./images/ui/1_bas.webp" alt="Bottom decoration, type 1" loading="lazy">
     </header>
 
     <main>
-        <p>
-            Use the first image to determine your location within the zone. Scan the details carefully, then click on the game map in the second image to mark your guess.
-            <img class="emote" src="./images/emotes/knight_wut.webp" alt="Emote Knight wut" loading="lazy">
-        </p>
-        <div id="menu"><button id="recharger">Restart</button></div>
+        <p data-i18n="jeu-texte-1"></p>
+        <div id="menu"><button id="recharger" data-i18n="jeu-bouton"></button></div>
         <div id="jeu">
             <img id="screenshot" src="./images/chargement.gif" alt="Screenshot of the current game scene" loading="lazy">
             <div id="carte-container">
@@ -69,24 +59,20 @@
 
     <section id="statistiques-container">
         <img src="./images/ui/3_haut.webp" alt="Top decoration, type 3" loading="lazy">
-        <h2>Statistics</h2>
-        <p>
-            Here, you can explore statistics from your past games. 
-            <img class="emote" src="./images/emotes/knight_think.webp" alt="Emote Knight think" loading="lazy">
-            If you play with an image you've already used, your previous score will be updated with the new one - while keeping your total game count unchanged.
-        </p>
+        <h2 data-i18n="statistiques-titre"></h2>
+        <p data-i18n="statistiques-texte"></p>
         <div id="statistiques">
             <div class="nombre-de-parties">
                 <p><span class="valeur">0</span><small>/<span class="quotient">???</span></small></p>
-                <p class="label">Number of<br>games played</p>
+                <p class="label" data-i18n="statistiques-nombre-de-jeu"></p>
             </div>
             <div class="moyenne">
                 <p><span class="valeur">0</span><small>/<span class="quotient">100</span></small></p>
-                <p class="label">Average score</p>
+                <p class="label" data-i18n="statistiques-score-moyen"></p>
             </div>
             <div class="total">
                 <p><span class="valeur">0</span><small>/<span class="quotient">???</span></small></p>
-                <p class="label">Total score</p>
+                <p class="label" data-i18n="statistiques-score-total"></p>
             </div>
         </div>
         <img src="./images/ui/3_bas.webp" alt="Bottom decoration, type 3" loading="lazy">
@@ -94,35 +80,10 @@
 
     <footer>
         <img src="./images/ui/2_haut.webp" alt="Top decoration, type 2" loading="lazy">
-        <h2>Acknowledgements</h2>
-        <p>
-            A big thank you to all the amazing people and projects whose work has made this site possible!
-            <img class="emote" src="./images/emotes/hornet_love.webp" alt="Emote Hornet love" loading="lazy">
-        </p>
-        <ul>
-            <li><a href="https://www.reddit.com/r/HollowKnight/comments/14a7a92/hollow_knight_custom_desktop_icons_oc/?show=original">Favicon (by u/LooneLuxxe)</a></li>
-            <li><a href="https://www.reddit.com/r/HollowKnight/comments/m48tv4/i_made_another_hollow_knight_emote_pack_theyre/?show=original">Emotes (by u/sleepytealeaf_art)</a></li>
-            <li>Hollow Knight : 
-                <a href="https://www.reddit.com/r/HollowKnight/comments/cf83u1/all_hollow_knight_sprites_as_of_version_1432/?show=original">Assets from the game (extracts by u/Sumwann)</a>, 
-                <a href="https://www.hallownest.net/downloads/">Stiched Map (by nook)</a> & 
-                <a href="https://scripterswar.com/hollowknight/map-sketch">Official Map (byRainingChain & Co)</a>
-            </li>
-            <li>Hollow Knight: Silksong Deep Docks (Demo) : 
-                <a href="https://www.reddit.com/r/HollowKnight/comments/133b06y/silksong_deep_docks_stiched_map/?show=original">Stiched Map (by u/aaronmason13)</a> & 
-                <a href="https://www.reddit.com/r/HollowKnight/comments/14tnak7/map_of_deep_docks_as_seen_in_the_2019_silksong/?show=original">Official Map (by u/No_Responsibility961)</a>
-            </li>
-            <li>Hollow Knight: Silksong Mossy Grotto (Demo) : 
-                <a href="https://www.reddit.com/r/HollowKnight/comments/cp1jbj/silksong_a_stitched_together_map_of_the_mossy/?show=original">Stiched Map (by u/Crispycocostar)</a> & 
-                <a href="https://www.reddit.com/r/HollowKnight/comments/d7vnpe/moss_grotto_demo_map/?show=original">Official Map (by u/Aluomorg)</a>
-            </li>
-        </ul>
-        <p>
-            Check out their awesome work!
-            <img class="emote" src="./images/emotes/knight_hype.webp" alt="Emote Knight hype" loading="lazy"><br>
-            The maps shown are not the official maps of the corresponding games. They have been reworked by hand to better reflect reality and address certain technical challenges.<br>
-            HollowGuessr is strongly inspired by the <a href="https://www.youtube.com/watch?v=P9NC9vqB74k&t=469s&ab_channel=RedBullCheckpoint">Red Bull GeoGamers concept by RedBull</a> (itself inspired by <a href="https://www.geoguessr.com/fr">GeoGuessr</a>) and based on the <a href="https://www.hollowknight.com/">Hollow Knight game by Team Cherry</a>.
-            <img class="emote" src="./images/emotes/knight_sip.webp" alt="Emote Knight sip" loading="lazy">
-        </p>
+        <h2 data-i18n="acknowledgements-titre">Acknowledgements</h2>
+        <p data-i18n="acknowledgements-texte-1"></p>
+        <ul data-i18n="acknowledgements-liste"></ul>
+        <p data-i18n="acknowledgements-texte-2"></p>
         <img src="./images/ui/2_bas.webp" alt="Bottom decoration, type 2" loading="lazy">
     </footer>
     <img src="./images/larve.webp" alt="Grub" loading="lazy">

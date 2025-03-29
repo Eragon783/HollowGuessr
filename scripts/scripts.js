@@ -12,7 +12,27 @@ $(function () {
         $(données.bouton).prependTo("#menu").change(bouton_jeux_change);
         bouton_jeux_change();
     }).fail((_, statut, erreur) => console.error("Erreur:", statut, erreur));
+
+    const defaultLang = "en";
+    const userLang = navigator.language.slice(0, 2);
+
+    fetch("./données/langues.json")
+        .then(response => response.json())
+        .then(data => {
+            const lang = data[userLang] ? userLang : defaultLang;
+            applyTranslations(data[lang]);
+        })
+        .catch(error => console.error("Erreur de chargement des traductions:", error));
 });
+
+function applyTranslations(translations) {
+    document.querySelectorAll("[data-i18n]").forEach(element => {
+        const key = element.getAttribute("data-i18n");
+        if (translations[key]) {
+            element.innerHTML = translations[key];
+        }
+    });
+}
 
 function bouton_jeux_change() {
     const jeu_sélectionné = $("#choix-jeu").val();
@@ -335,25 +355,49 @@ function lancer_le_jeu() {
 
     $.getJSON(`./scripts/obtenir_nombre_de_fichiers.php?zone=${jeu_sélectionné}&dimension=${dimension_sélectionnée}`, réponse => {
 
-        let message_html = "<strong>" + réponse.nombre_de_fichiers + "</strong> different locations possible with these parameters.";
+        const messages = {
+            "hollow_knight_silksong_": "jeu-texte-3-hollow-knight-silksong",
+            "hollow_knight_boss": "jeu-texte-3-hollow-knight-boss",
+            "hollow_knight_npc": "jeu-texte-3-hollow-knight-npc",
+            "hollow_knight_areas": "jeu-texte-3-hollow-knight-areas"
+        };
 
-        if (jeu_sélectionné.startsWith("hollow_knight_silksong_")) {
-            message_html += " The screenshots are of poor quality, as they come from gameplay videos recorded during the demo presented at E3 2019.";
-        }
-        if (jeu_sélectionné.startsWith("hollow_knight_boss")) {
-            message_html += " If an boss is to be found in more than one place in the game, indicate the place where the Knight first encounters it.";
-        }
-        if (jeu_sélectionné.startsWith("hollow_knight_npc")) {
-            message_html += " If an NPC is to be found in more than one place in the game, indicate the place where the Knight first encounters it.";
-        }
-        if (jeu_sélectionné.startsWith("hollow_knight_areas")) {
-            message_html += " To get the maximum number of points, click on the center of the area.";
-        }
+        const defaultLang = "en";
+        const userLang = navigator.language.slice(0, 2);
 
-        $("<p>", {
-            class: "message élément-éphémère",
-            html: message_html
-        }).insertAfter("#jeu");
+        fetch("./données/langues.json")
+            .then(response => response.json())
+            .then(data => {
+                const lang = data[userLang] ? userLang : defaultLang;
+
+                let message_html = data[lang]["jeu-texte-2"].replace("***", réponse.nombre_de_fichiers);
+
+                let fetchPromises = [];
+
+                for (const [prefix, id] of Object.entries(messages)) {
+                    if (jeu_sélectionné.startsWith(prefix)) {
+                        let promise = new Promise((resolve, reject) => {
+                            if (data[lang][id]) {
+                                message_html += " " + data[lang][id];
+                                resolve();
+                            } else {
+                                reject("Texte non trouvé");
+                            }
+                        });
+
+                        fetchPromises.push(promise);
+                    }
+                }
+
+                Promise.all(fetchPromises).then(() => {
+                    $("<p>", {
+                        class: "message élément-éphémère",
+                        html: message_html
+                    }).insertAfter("#jeu");
+                }).catch(error => console.error(error));
+
+            })
+            .catch(error => console.error("Erreur de chargement des traductions:", error));
     }).fail((_, statut, erreur) => console.error("Erreur:", statut, erreur));
 }
 
@@ -469,9 +513,7 @@ function mettre_à_jour_les_scores() {
                     }));
                 }
             });
-        } else {
-            console.error("Les données reçues ne sont pas un objet valide.");
-        }
+        } else console.error("Les données reçues ne sont pas un objet valide.");
 
         $.when(...requêtes).then(() => {
             const nombre_fichiers_formaté = nombre_fichiers.toLocaleString('fr-FR').replace(/\s/g, ".");
@@ -493,24 +535,45 @@ function mettre_à_jour_les_scores() {
         const total_derniers_scores = derniers_scores.reduce((total, valeur) => total + valeur, 0);
         const moyenne_derniers_scores = derniers_scores.length ? (total_derniers_scores / derniers_scores.length).toFixed(1) : "0.0";
 
-        if (!$("#statistiques-30").length) {
-            $("<div>", {
-                id: "statistiques-30",
-                html: "<div class='moyenne'><p><span class='valeur'>0</span><small>/<span class='quotient'>100</span></small></p><p class='label'>Average score</p></div><div class='total'><p><span class='valeur'>0</span><small>/<span class='quotient'>3000</span></small></p><p class='label'>Total score</p></div>"
-            }).insertAfter("#statistiques-container #statistiques");
+        const defaultLang = "en";
+        const userLang = navigator.language.slice(0, 2);
 
-            $("<p>", {
-                html: "For your last 30 games:"
-            }).insertAfter("#statistiques-container #statistiques");
-        }
+        fetch("./données/langues.json")
+            .then(response => response.json())
+            .then(data => {
+                const lang = data[userLang] ? userLang : defaultLang;
 
-        setTimeout(() => {
-            if (moyenne_derniers_scores !== "0.0") {
-                $("#statistiques-30 .moyenne .valeur").text(moyenne_derniers_scores);
-            }
-            if (total_derniers_scores !== 0) {
-                $("#statistiques-30 .total .valeur").text(total_derniers_scores);
-            }
-        }, 0);
+                const averageScoreText = data[lang]["statistiques-score-moyen-30"];
+                const totalScoreText = data[lang]["statistiques-score-total-30"];
+                const last30GamesText = data[lang]["statistiques-texte-30"];
+
+                if (!$("#statistiques-30").length) {
+                    $("<div>", {
+                        id: "statistiques-30",
+                        html: `
+                            <div class='moyenne'>
+                                <p><span class='valeur'>0</span><small>/<span class='quotient'>100</span></small></p>
+                                <p class='label'>${averageScoreText}</p>
+                            </div>
+                            <div class='total'>
+                                <p><span class='valeur'>0</span><small>/<span class='quotient'>3000</span></small></p>
+                                <p class='label'>${totalScoreText}</p>
+                            </div>
+                        `
+                    }).insertAfter("#statistiques-container #statistiques");
+
+                    $("<p>", {
+                        html: last30GamesText
+                    }).insertAfter("#statistiques-container #statistiques");
+
+                    if (moyenne_derniers_scores !== "0.0") {
+                        $("#statistiques-30 .moyenne .valeur").text(moyenne_derniers_scores);
+                    }
+                    if (total_derniers_scores !== 0) {
+                        $("#statistiques-30 .total .valeur").text(total_derniers_scores);
+                    }
+                }
+            })
+            .catch(error => console.error("Erreur de chargement des traductions:", error));
     }
 }
