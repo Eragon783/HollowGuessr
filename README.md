@@ -20,6 +20,7 @@ Welcome to **HollowGuessr**! Get ready to immerse yourself in the mysterious bea
 - **No loading times** for a seamless experience  
 - A **sleek and ergonomic interface** that’s easy on the eyes  
 - **Fully responsive design**, optimized for all screen sizes, including mobile devices
+- **Several languages** available (English, French, German, Spanish, Portuguese, Russian)
 
 ## Missing Files
 
