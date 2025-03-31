@@ -20,21 +20,9 @@
             "seuil_0": 600
         }
     },
-    "hollow_knight_areas": {
-        "nom": "Hollow Knight - Areas",
-        "id": "hollow_knight_areas",
-        "type": "quiz",
-        "favicon": "hollow_knight",
-        "facteur_de_zoom": 0.4,
-        "marqueur": "hollow_knight",
-        "score": {
-            "seuil_100": 400,
-            "seuil_0": 600
-        }
-    },
-    "hollow_knight_charms": {
-        "nom": "Hollow Knight - Charms",
-        "id": "hollow_knight_charms",
+    "hollow_knight_items": {
+        "nom": "Hollow Knight - Items",
+        "id": "hollow_knight_items",
         "type": "quiz",
         "favicon": "hollow_knight",
         "facteur_de_zoom": 0.4,
@@ -44,9 +32,9 @@
             "seuil_0": 600
         }
     },
-    "hollow_knight_items": {
-        "nom": "Hollow Knight - Items",
-        "id": "hollow_knight_items",
+    "hollow_knight_charms": {
+        "nom": "Hollow Knight - Charms",
+        "id": "hollow_knight_charms",
         "type": "quiz",
         "favicon": "hollow_knight",
         "facteur_de_zoom": 0.4,
@@ -77,6 +65,18 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 300,
+            "seuil_0": 600
+        }
+    },
+    "hollow_knight_areas": {
+        "nom": "Hollow Knight - Areas",
+        "id": "hollow_knight_areas",
+        "type": "quiz",
+        "favicon": "hollow_knight",
+        "facteur_de_zoom": 0.4,
+        "marqueur": "hollow_knight",
+        "score": {
+            "seuil_100": 400,
             "seuil_0": 600
         }
     },
