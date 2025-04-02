@@ -110,10 +110,21 @@ $("#carte").click(évènement => {
         ancien_marqueur.remove();
 
         if (!$("#confirmer-jeu").length) {
-            $("<button>", {
-                id: "confirmer-jeu",
-                text: "Confirm"
-            }).appendTo("main").click(confirmer_jeu_clic);
+
+            const defaultLang = "en";
+            const userLang = navigator.language.slice(0, 2);
+
+            fetch("./données/langues.json")
+                .then(response => response.json())
+                .then(data => {
+                    const lang = data[userLang] ? userLang : defaultLang;
+
+                    $("<button>", {
+                        id: "confirmer-jeu",
+                        text: data[lang]["jeu-confirm"]
+                    }).appendTo("main").click(confirmer_jeu_clic);
+
+                });
         }
     }
 });
@@ -219,11 +230,21 @@ function confirmer_jeu_clic() {
                 localStorage.setItem(`screenshot_${screenshot.attr("fichier_image_aléatoire")}_timestamp`, Date.now());
                 mettre_à_jour_les_scores();
 
-                $("<button>", {
-                    id: "continue",
-                    class: "élément-éphémère",
-                    html: "Continue"
-                }).appendTo("main").on("click", lancer_le_jeu);
+                const defaultLang = "en";
+                const userLang = navigator.language.slice(0, 2);
+
+                fetch("./données/langues.json")
+                    .then(response => response.json())
+                    .then(data => {
+                        const lang = data[userLang] ? userLang : defaultLang;
+
+                        $("<button>", {
+                            id: "continue",
+                            class: "élément-éphémère",
+                            html: data[lang]["jeu-continue"]
+                        }).appendTo("main").on("click", lancer_le_jeu);
+
+                    });
 
                 marqueur_solution.on('load', function () {
                     const cercle_proche = $("<div>", { id: "cercle_proche", class: "élément-éphémère" }).appendTo("#carte-container");
@@ -479,20 +500,20 @@ function mettre_à_jour_les_scores() {
         .filter(clé => clé.startsWith("screenshot_") && !clé.endsWith("_timestamp"));
 
     if (clés_screenshots.length > 0) {
-        $("#statistiques .nombre-de-parties .valeur").text(clés_screenshots.length);
+        $("#statistiques .nombre-de-parties .valeur").text(clés_screenshots.length.toLocaleString('fr-FR').replace(/\s/g, "."));
     }
 
     const scores = clés_screenshots.map(clé => parseFloat(localStorage.getItem(clé)))
         .filter(valeur => !isNaN(valeur));
 
     const total_scores = scores.reduce((total, valeur) => total + valeur, 0);
-    const moyenne = scores.length ? (total_scores / scores.length).toFixed(1) : "0.0";
+    const moyenne = scores.length ? (total_scores / scores.length).toFixed(1).toLocaleString('fr-FR').replace(/\s/g, ".") : "0.0";
 
     if (moyenne !== "0.0") {
         $("#statistiques .moyenne .valeur").text(moyenne);
     }
     if (total_scores !== 0) {
-        $("#statistiques .total .valeur").text(total_scores);
+        $("#statistiques .total .valeur").text(total_scores.toLocaleString('fr-FR').replace(/\s/g, "."));
     }
 
     $.getJSON("./données/zones.json", données => {
@@ -518,7 +539,6 @@ function mettre_à_jour_les_scores() {
         $.when(...requêtes).then(() => {
             const nombre_fichiers_formaté = nombre_fichiers.toLocaleString('fr-FR').replace(/\s/g, ".");
             $("#statistiques .nombre-de-parties .quotient").text(nombre_fichiers_formaté);
-            $("#statistiques .total .quotient").text((nombre_fichiers * 100).toLocaleString('fr-FR').replace(/\s/g, "."));
         });
     });
 
@@ -533,7 +553,7 @@ function mettre_à_jour_les_scores() {
             .filter(valeur => !isNaN(valeur));
 
         const total_derniers_scores = derniers_scores.reduce((total, valeur) => total + valeur, 0);
-        const moyenne_derniers_scores = derniers_scores.length ? (total_derniers_scores / derniers_scores.length).toFixed(1) : "0.0";
+        const moyenne_derniers_scores = derniers_scores.length ? (total_derniers_scores / derniers_scores.length).toFixed(1).toLocaleString('fr-FR').replace(/\s/g, ".") : "0.0";
 
         const defaultLang = "en";
         const userLang = navigator.language.slice(0, 2);
@@ -570,7 +590,7 @@ function mettre_à_jour_les_scores() {
                         $("#statistiques-30 .moyenne .valeur").text(moyenne_derniers_scores);
                     }
                     if (total_derniers_scores !== 0) {
-                        $("#statistiques-30 .total .valeur").text(total_derniers_scores);
+                        $("#statistiques-30 .total .valeur").text(total_derniers_scores.toLocaleString('fr-FR').replace(/\s/g, "."));
                     }
                 }
             })
