@@ -226,8 +226,8 @@ function confirmer_jeu_clic() {
                     }).appendTo("main");
                 }
 
-                localStorage.setItem(`screenshot_${screenshot.attr("fichier_image_aléatoire")}`, score);
-                localStorage.setItem(`screenshot_${screenshot.attr("fichier_image_aléatoire")}_timestamp`, Date.now());
+                localStorage.setItem(`screenshot_${jeu_sélectionné}_${screenshot.attr("fichier_image_aléatoire")}`, score);
+                localStorage.setItem(`screenshot_${jeu_sélectionné}_${screenshot.attr("fichier_image_aléatoire")}_timestamp`, Date.now());
                 mettre_à_jour_les_scores();
 
                 const defaultLang = "en";
