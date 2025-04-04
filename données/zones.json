@@ -265,8 +265,8 @@
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
-            "seuil_100": 60,
-            "seuil_0": 180
+            "seuil_100": 65,
+            "seuil_0": 195
         }
     },
     "hollow_knight_greenpath": {
@@ -328,8 +328,8 @@
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
-            "seuil_100": 80,
-            "seuil_0": 240
+            "seuil_100": 75,
+            "seuil_0": 225
         }
     },
     "hollow_knight_king_s_pass": {
