@@ -223,8 +223,8 @@
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
-            "seuil_100": 80,
-            "seuil_0": 240
+            "seuil_100": 70,
+            "seuil_0": 210
         }
     },
     "hollow_knight_forgotten_crossroads": {
@@ -244,8 +244,8 @@
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
-            "seuil_100": 70,
-            "seuil_0": 210
+            "seuil_100": 60,
+            "seuil_0": 180
         }
     },
     "hollow_knight_fungal_wastes": {
@@ -286,8 +286,8 @@
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
-            "seuil_100": 70,
-            "seuil_0": 210
+            "seuil_100": 60,
+            "seuil_0": 180
         }
     },
     "hollow_knight_hive": {
@@ -307,8 +307,8 @@
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
-            "seuil_100": 90,
-            "seuil_0": 270
+            "seuil_100": 80,
+            "seuil_0": 240
         }
     },
     "hollow_knight_howling_cliffs": {
@@ -412,8 +412,8 @@
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
-            "seuil_100": 80,
-            "seuil_0": 240
+            "seuil_100": 60,
+            "seuil_0": 180
         }
     },
     "hollow_knight_royal_waterways": {
@@ -433,8 +433,8 @@
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
-            "seuil_100": 70,
-            "seuil_0": 210
+            "seuil_100": 60,
+            "seuil_0": 180
         }
     },
     "hollow_knight_silksong_demo_deep_docks": {
