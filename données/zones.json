@@ -17,7 +17,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 150,
-            "seuil_0": 450
+            "seuil_0": 750
         }
     },
     "hollow_knight_items": {
@@ -29,7 +29,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 150,
-            "seuil_0": 450
+            "seuil_0": 750
         }
     },
     "hollow_knight_charms": {
@@ -41,7 +41,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 150,
-            "seuil_0": 450
+            "seuil_0": 750
         }
     },
     "hollow_knight_boss": {
@@ -53,7 +53,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 150,
-            "seuil_0": 450
+            "seuil_0": 750
         }
     },
     "hollow_knight_npc": {
@@ -65,7 +65,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 150,
-            "seuil_0": 450
+            "seuil_0": 750
         }
     },
     "hollow_knight_areas": {
@@ -98,7 +98,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 80,
-            "seuil_0": 240
+            "seuil_0": 400
         }
     },
     "hollow_knight_ancient_basin": {
@@ -119,7 +119,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 60,
-            "seuil_0": 180
+            "seuil_0": 300
         }
     },
     "hollow_knight_city_of_tears": {
@@ -140,7 +140,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 50,
-            "seuil_0": 150
+            "seuil_0": 250
         }
     },
     "hollow_knight_crystal_peak": {
@@ -161,7 +161,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 60,
-            "seuil_0": 180
+            "seuil_0": 300
         }
     },
     "hollow_knight_deepnest": {
@@ -182,7 +182,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 50,
-            "seuil_0": 150
+            "seuil_0": 250
         }
     },
     "hollow_knight_dirtmouth": {
@@ -202,8 +202,8 @@
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
-            "seuil_100": 120,
-            "seuil_0": 360
+            "seuil_100": 600,
+            "seuil_0": 480
         }
     },
     "hollow_knight_fog_canyon": {
@@ -224,7 +224,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 70,
-            "seuil_0": 210
+            "seuil_0": 350
         }
     },
     "hollow_knight_forgotten_crossroads": {
@@ -245,7 +245,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 60,
-            "seuil_0": 180
+            "seuil_0": 300
         }
     },
     "hollow_knight_fungal_wastes": {
@@ -266,7 +266,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 65,
-            "seuil_0": 195
+            "seuil_0": 325
         }
     },
     "hollow_knight_greenpath": {
@@ -287,7 +287,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 60,
-            "seuil_0": 180
+            "seuil_0": 300
         }
     },
     "hollow_knight_hive": {
@@ -308,7 +308,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 80,
-            "seuil_0": 240
+            "seuil_0": 400
         }
     },
     "hollow_knight_howling_cliffs": {
@@ -329,7 +329,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 75,
-            "seuil_0": 225
+            "seuil_0": 375
         }
     },
     "hollow_knight_king_s_pass": {
@@ -350,7 +350,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 120,
-            "seuil_0": 360
+            "seuil_0": 600
         }
     },
     "hollow_knight_kingdom_s_edge": {
@@ -371,7 +371,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 70,
-            "seuil_0": 210
+            "seuil_0": 350
         }
     },
     "hollow_knight_queen_s_gardens": {
@@ -392,7 +392,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 60,
-            "seuil_0": 180
+            "seuil_0": 300
         }
     },
     "hollow_knight_resting_grounds": {
@@ -413,7 +413,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 60,
-            "seuil_0": 180
+            "seuil_0": 300
         }
     },
     "hollow_knight_royal_waterways": {
@@ -434,7 +434,7 @@
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 60,
-            "seuil_0": 180
+            "seuil_0": 300
         }
     },
     "hollow_knight_silksong_demo_deep_docks": {
@@ -454,8 +454,8 @@
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight_silksong",
         "score": {
-            "seuil_100": 150,
-            "seuil_0": 350
+            "seuil_100": 90,
+            "seuil_0": 450
         }
     },
     "hollow_knight_silksong_demo_mossy_grotto": {
@@ -475,8 +475,8 @@
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight_silksong",
         "score": {
-            "seuil_100": 150,
-            "seuil_0": 350
+            "seuil_100": 80,
+            "seuil_0": 400
         }
     }
 }
