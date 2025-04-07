@@ -333,7 +333,6 @@ function charger_nouveau_screenshot(url, jeu_sélectionné, dimension_sélection
             const date_actuelle = Date.now();
             const delta = Math.floor((date_actuelle - timestamp) / 1000);
             let probabilité = 1 / (1 + Math.exp(delta / 86400));
-            console.log("Probabilité de changer d'image : " + probabilité);
 
             if (Math.random() < probabilité) {
                 charger_nouveau_screenshot(url, jeu_sélectionné, dimension_sélectionnée)
