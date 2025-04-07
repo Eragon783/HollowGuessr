@@ -202,7 +202,7 @@
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
-            "seuil_100": 600,
+            "seuil_100": 60,
             "seuil_0": 480
         }
     },

@@ -324,21 +324,22 @@ function tracer_une_ligne(ligne, point_1, point_2) {
     });
 }
 
-function lancer_le_jeu() {
-    $(".élément-éphémère").remove();
-    $("#carte").css("cursor", "pointer");
-
-    const jeu_sélectionné = $("#choix-jeu").val();
-    const dimension_sélectionnée = $("#choix-dimension").val() ?? null;
-
-    let url = `./scripts/obtenir_image_aléatoire.php?zone=${jeu_sélectionné}&dimension=${dimension_sélectionnée}`;
-
-    const fichier_image_aléatoire = $("#screenshot").attr("fichier_image_aléatoire");
-    if (fichier_image_aléatoire) {
-        url += `&exclure=${fichier_image_aléatoire}`;
-    }
-
+function charger_nouveau_screenshot(url, jeu_sélectionné, dimension_sélectionnée) {
     $.getJSON(url, données => {
+        
+        if (localStorage.getItem("screenshot_" + jeu_sélectionné + "_" + données.fichier) !== null) {
+            timestamp = localStorage.getItem("screenshot_" + jeu_sélectionné + "_" + données.fichier + "_timestamp")
+
+            const date_actuelle = Date.now();
+            const delta = Math.floor((date_actuelle - timestamp) / 1000);
+            let probabilité = 1 / (1 + Math.exp(delta / 86400));
+            console.log("Probabilité de changer d'image : " + probabilité);
+
+            if (Math.random() < probabilité) {
+                charger_nouveau_screenshot(url, jeu_sélectionné, dimension_sélectionnée)
+            }
+        }
+
         const screenshot = $("#screenshot");
         screenshot.attr({
             "fichier_image_aléatoire": données.fichier,
@@ -373,6 +374,23 @@ function lancer_le_jeu() {
         }
 
     }).fail((_, statut, erreur) => console.error("Erreur:", statut, erreur));
+}
+
+function lancer_le_jeu() {
+    $(".élément-éphémère").remove();
+    $("#carte").css("cursor", "pointer");
+
+    const jeu_sélectionné = $("#choix-jeu").val();
+    const dimension_sélectionnée = $("#choix-dimension").val() ?? null;
+
+    let url = `./scripts/obtenir_image_aléatoire.php?zone=${jeu_sélectionné}&dimension=${dimension_sélectionnée}`;
+
+    const fichier_image_aléatoire = $("#screenshot").attr("fichier_image_aléatoire");
+    if (fichier_image_aléatoire) {
+        url += `&exclure=${fichier_image_aléatoire}`;
+    }
+
+    charger_nouveau_screenshot(url, jeu_sélectionné, dimension_sélectionnée);
 
     $.getJSON(`./scripts/obtenir_nombre_de_fichiers.php?zone=${jeu_sélectionné}&dimension=${dimension_sélectionnée}`, réponse => {
 
