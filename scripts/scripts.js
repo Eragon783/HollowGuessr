@@ -327,23 +327,25 @@ function tracer_une_ligne(ligne, point_1, point_2) {
 function charger_nouveau_screenshot(url, jeu_sélectionné, dimension_sélectionnée) {
     $.getJSON(url, données => {
         
+        const screenshot = $("#screenshot");
+        if (screenshot.attr("src") != "./images/chargement.gif") {
+            screenshot.attr({
+                "fichier_image_aléatoire": données.fichier,
+                "src": "./images/chargement.gif"
+            });
+        }
+
         if (localStorage.getItem("screenshot_" + jeu_sélectionné + "_" + données.fichier) !== null) {
             timestamp = localStorage.getItem("screenshot_" + jeu_sélectionné + "_" + données.fichier + "_timestamp")
 
             const date_actuelle = Date.now();
             const delta = Math.floor((date_actuelle - timestamp) / 1000);
-            let probabilité = 1 / (1 + Math.exp(delta / 86400));
+            let probabilité = 1 / (1 / 3 + 2 * Math.exp(delta / 86400) / 3);
 
             if (Math.random() < probabilité) {
                 charger_nouveau_screenshot(url, jeu_sélectionné, dimension_sélectionnée)
             }
         }
-
-        const screenshot = $("#screenshot");
-        screenshot.attr({
-            "fichier_image_aléatoire": données.fichier,
-            "src": "./images/chargement.gif"
-        });
 
         const image = new Image();
 
