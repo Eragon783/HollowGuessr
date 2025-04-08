@@ -163,7 +163,8 @@
         },
         "coordonnées_à_éviter" : [
             {"gauche": 0, "droite": 11331, "haut": 0, "bas": 8672},
-            {"gauche": 0, "droite": 17056, "haut": 0, "bas": 6193}
+            {"gauche": 0, "droite": 17056, "haut": 0, "bas": 6193},
+            {"gauche": 20276, "droite": 23171, "haut": 0, "bas": 3556}
         ],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
@@ -362,7 +363,9 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter" : [
+            {"gauche": 1276, "droite": 5592, "haut": 0, "bas": 1216}
+        ],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
