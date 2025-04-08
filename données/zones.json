@@ -139,7 +139,28 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter" : [
+            {"gauche": 5900, "droite": 8916, "haut": 8674, "bas": 12457},
+            {"gauche": 10505, "droite": 12512, "haut": 10900, "bas": 13494},
+            {"gauche": 21609, "droite": 26016, "haut": 0, "bas": 10512},
+            {"gauche": 22671, "droite": 23678, "haut": 10813, "bas": 13310},
+            {"gauche": 16448, "droite": 19300, "haut": 0, "bas": 10455},
+            {"gauche": 17836, "droite": 21098, "haut": 10455, "bas": 12897},
+            {"gauche": 20817, "droite": 21747, "haut": 11511, "bas": 12501},
+            {"gauche": 8928, "droite": 14464, "haut": 0, "bas": 5424},
+            {"gauche": 10720, "droite": 14048, "haut": 9656, "bas": 10472},
+            {"gauche": 12888, "droite": 14426, "haut": 0, "bas": 6528},
+            {"gauche": 12920, "droite": 14061, "haut": 5988, "bas": 10400},
+            {"gauche": 16898, "droite": 18870, "haut": 10680, "bas": 13443},
+            {"gauche": 11936, "droite": 13728, "haut": 8504, "bas": 10192},
+            {"gauche": 14172, "droite": 17172, "haut": 0, "bas": 2984},
+            {"gauche": 15873, "droite": 18821, "haut": 0, "bas": 7084},
+            {"gauche": 15482, "droite": 17598, "haut": 3399, "bas": 6517},
+            {"gauche": 11848, "droite": 14072, "haut": 11136, "bas": 13232},
+            {"gauche": 23278, "droite": 23932, "haut": 11338, "bas": 12288},
+            {"gauche": 14176, "droite": 14620, "haut": 3368, "bas": 6532},
+            {"gauche": 12696, "droite": 13704, "haut": 6894, "bas": 10047}
+        ],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
