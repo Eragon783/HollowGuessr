@@ -13,7 +13,152 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [
+            {
+                "gauche": 31188,
+                "droite": 43585,
+                "haut": 0,
+                "bas": 7958
+            },
+            {
+                "gauche": 42481,
+                "droite": 49225,
+                "haut": 0,
+                "bas": 5368
+            },
+            {
+                "gauche": 53038,
+                "droite": 55361,
+                "haut": 0,
+                "bas": 2737
+            },
+            {
+                "gauche": 20333,
+                "droite": 26790,
+                "haut": 0,
+                "bas": 8208
+            },
+            {
+                "gauche": 37829,
+                "droite": 40771,
+                "haut": 23386,
+                "bas": 27170
+            },
+            {
+                "gauche": 53496,
+                "droite": 55772,
+                "haut": 24288,
+                "bas": 25204
+            },
+            {
+                "gauche": 54552,
+                "droite": 55516,
+                "haut": 25588,
+                "bas": 27796
+            },
+            {
+                "gauche": 55292,
+                "droite": 55788,
+                "haut": 26052,
+                "bas": 27796
+            },
+            {
+                "gauche": 42368,
+                "droite": 44360,
+                "haut": 25504,
+                "bas": 28244
+            },
+            {
+                "gauche": 44184,
+                "droite": 46056,
+                "haut": 25824,
+                "bas": 27964
+            },
+            {
+                "gauche": 49813,
+                "droite": 51172,
+                "haut": 23292,
+                "bas": 25256
+            },
+            {
+                "gauche": 49835,
+                "droite": 52998,
+                "haut": 25107,
+                "bas": 27516
+            },
+            {
+                "gauche": 49813,
+                "droite": 51172,
+                "haut": 23292,
+                "bas": 25256
+            },
+            {
+                "gauche": 49813,
+                "droite": 50952,
+                "haut": 23292,
+                "bas": 27896
+            },
+            {
+                "gauche": 52684,
+                "droite": 53592,
+                "haut": 26235,
+                "bas": 27435
+            },
+            {
+                "gauche": 47806,
+                "droite": 50064,
+                "haut": 16848,
+                "bas": 21879
+            },
+            {
+                "gauche": 47311,
+                "droite": 48020,
+                "haut": 18128,
+                "bas": 21208
+            },
+            {
+                "gauche": 40912,
+                "droite": 49584,
+                "haut": 16912,
+                "bas": 17745
+            },
+            {
+                "gauche": 40912,
+                "droite": 46227,
+                "haut": 16912,
+                "bas": 20174
+            },
+            {
+                "gauche": 45908,
+                "droite": 46508,
+                "haut": 18117,
+                "bas": 21252
+            },
+            {
+                "gauche": 44770,
+                "droite": 45925,
+                "haut": 20889,
+                "bas": 25212
+            },
+            {
+                "gauche": 44595,
+                "droite": 45925,
+                "haut": 20097,
+                "bas": 25212
+            },
+            {
+                "gauche": 43813,
+                "droite": 45925,
+                "haut": 23210,
+                "bas": 25212
+            },
+            {
+                "gauche": 42526,
+                "droite": 45925,
+                "haut": 24398,
+                "bas": 25212
+            }
+        ],
         "facteur_de_zoom": 0.4,
         "marqueur": "hollow_knight",
         "score": {
@@ -95,7 +240,7 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -117,7 +262,7 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -139,27 +284,127 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [
-            {"gauche": 5900, "droite": 8916, "haut": 8674, "bas": 12457},
-            {"gauche": 10505, "droite": 12512, "haut": 10900, "bas": 13494},
-            {"gauche": 21609, "droite": 26016, "haut": 0, "bas": 10512},
-            {"gauche": 22671, "droite": 23678, "haut": 10813, "bas": 13310},
-            {"gauche": 16448, "droite": 19300, "haut": 0, "bas": 10455},
-            {"gauche": 17836, "droite": 21098, "haut": 10455, "bas": 12897},
-            {"gauche": 20817, "droite": 21747, "haut": 11511, "bas": 12501},
-            {"gauche": 8928, "droite": 14464, "haut": 0, "bas": 5424},
-            {"gauche": 10720, "droite": 14048, "haut": 9656, "bas": 10472},
-            {"gauche": 12888, "droite": 14426, "haut": 0, "bas": 6528},
-            {"gauche": 12920, "droite": 14061, "haut": 5988, "bas": 10400},
-            {"gauche": 16898, "droite": 18870, "haut": 10680, "bas": 13443},
-            {"gauche": 11936, "droite": 13728, "haut": 8504, "bas": 10192},
-            {"gauche": 14172, "droite": 17172, "haut": 0, "bas": 2984},
-            {"gauche": 15873, "droite": 18821, "haut": 0, "bas": 7084},
-            {"gauche": 15482, "droite": 17598, "haut": 3399, "bas": 6517},
-            {"gauche": 11848, "droite": 14072, "haut": 11136, "bas": 13232},
-            {"gauche": 23278, "droite": 23932, "haut": 11338, "bas": 12288},
-            {"gauche": 14176, "droite": 14620, "haut": 3368, "bas": 6532},
-            {"gauche": 12696, "droite": 13704, "haut": 6894, "bas": 10047}
+        "coordonnées_à_éviter": [
+            {
+                "gauche": 5900,
+                "droite": 8916,
+                "haut": 8674,
+                "bas": 12457
+            },
+            {
+                "gauche": 10505,
+                "droite": 12512,
+                "haut": 10900,
+                "bas": 13494
+            },
+            {
+                "gauche": 21609,
+                "droite": 26016,
+                "haut": 0,
+                "bas": 10512
+            },
+            {
+                "gauche": 22671,
+                "droite": 23678,
+                "haut": 10813,
+                "bas": 13310
+            },
+            {
+                "gauche": 16448,
+                "droite": 19300,
+                "haut": 0,
+                "bas": 10455
+            },
+            {
+                "gauche": 17836,
+                "droite": 21098,
+                "haut": 10455,
+                "bas": 12897
+            },
+            {
+                "gauche": 20817,
+                "droite": 21747,
+                "haut": 11511,
+                "bas": 12501
+            },
+            {
+                "gauche": 8928,
+                "droite": 14464,
+                "haut": 0,
+                "bas": 5424
+            },
+            {
+                "gauche": 10720,
+                "droite": 14048,
+                "haut": 9656,
+                "bas": 10472
+            },
+            {
+                "gauche": 12888,
+                "droite": 14426,
+                "haut": 0,
+                "bas": 6528
+            },
+            {
+                "gauche": 12920,
+                "droite": 14061,
+                "haut": 5988,
+                "bas": 10400
+            },
+            {
+                "gauche": 16898,
+                "droite": 18870,
+                "haut": 10680,
+                "bas": 13443
+            },
+            {
+                "gauche": 11936,
+                "droite": 13728,
+                "haut": 8504,
+                "bas": 10192
+            },
+            {
+                "gauche": 14172,
+                "droite": 17172,
+                "haut": 0,
+                "bas": 2984
+            },
+            {
+                "gauche": 15873,
+                "droite": 18821,
+                "haut": 0,
+                "bas": 7084
+            },
+            {
+                "gauche": 15482,
+                "droite": 17598,
+                "haut": 3399,
+                "bas": 6517
+            },
+            {
+                "gauche": 11848,
+                "droite": 14072,
+                "haut": 11136,
+                "bas": 13232
+            },
+            {
+                "gauche": 23278,
+                "droite": 23932,
+                "haut": 11338,
+                "bas": 12288
+            },
+            {
+                "gauche": 14176,
+                "droite": 14620,
+                "haut": 3368,
+                "bas": 6532
+            },
+            {
+                "gauche": 12696,
+                "droite": 13704,
+                "haut": 6894,
+                "bas": 10047
+            }
         ],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
@@ -182,10 +427,25 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [
-            {"gauche": 0, "droite": 11331, "haut": 0, "bas": 8672},
-            {"gauche": 0, "droite": 17056, "haut": 0, "bas": 6193},
-            {"gauche": 20276, "droite": 23171, "haut": 0, "bas": 3556}
+        "coordonnées_à_éviter": [
+            {
+                "gauche": 0,
+                "droite": 11331,
+                "haut": 0,
+                "bas": 8672
+            },
+            {
+                "gauche": 0,
+                "droite": 17056,
+                "haut": 0,
+                "bas": 6193
+            },
+            {
+                "gauche": 20276,
+                "droite": 23171,
+                "haut": 0,
+                "bas": 3556
+            }
         ],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
@@ -208,7 +468,7 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -230,7 +490,7 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -252,7 +512,7 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -274,7 +534,7 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -296,7 +556,7 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -318,7 +578,7 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -340,7 +600,7 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -362,7 +622,7 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -384,8 +644,13 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [
-            {"gauche": 1276, "droite": 5592, "haut": 0, "bas": 1216}
+        "coordonnées_à_éviter": [
+            {
+                "gauche": 1276,
+                "droite": 5592,
+                "haut": 0,
+                "bas": 1216
+            }
         ],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
@@ -408,7 +673,7 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -430,7 +695,7 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -452,7 +717,7 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -474,7 +739,7 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -496,7 +761,7 @@
                 250
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight_silksong",
         "score": {
@@ -518,7 +783,7 @@
                 275
             ]
         },
-        "coordonnées_à_éviter" : [],
+        "coordonnées_à_éviter": [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight_silksong",
         "score": {
