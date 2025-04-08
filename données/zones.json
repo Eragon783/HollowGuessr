@@ -13,6 +13,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0.4,
         "marqueur": "hollow_knight",
         "score": {
@@ -94,6 +95,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -115,6 +117,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -136,6 +139,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -157,6 +161,10 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [
+            {"gauche": 0, "droite": 11331, "haut": 0, "bas": 8672},
+            {"gauche": 0, "droite": 17056, "haut": 0, "bas": 6193}
+        ],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -178,6 +186,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -199,6 +208,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -220,6 +230,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -241,6 +252,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -262,6 +274,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -283,6 +296,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -304,6 +318,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -325,6 +340,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -346,6 +362,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -367,6 +384,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -388,6 +406,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -409,6 +428,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -430,6 +450,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
@@ -451,6 +472,7 @@
                 250
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight_silksong",
         "score": {
@@ -472,6 +494,7 @@
                 275
             ]
         },
+        "coordonnées_à_éviter" : [],
         "facteur_de_zoom": 0,
         "marqueur": "hollow_knight_silksong",
         "score": {
