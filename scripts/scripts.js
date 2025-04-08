@@ -340,7 +340,7 @@ function charger_nouveau_screenshot(url, jeu_sélectionné, dimension_sélection
 
             const date_actuelle = Date.now();
             const delta = Math.floor((date_actuelle - timestamp) / 1000);
-            let probabilité = 1 / (1 / 3 + 2 * Math.exp(delta / 86400) / 3);
+            let probabilité = 1 / (1 + Math.exp(delta / 86400));
 
             if (Math.random() < probabilité) {
                 charger_nouveau_screenshot(url, jeu_sélectionné, dimension_sélectionnée)
