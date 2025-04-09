@@ -330,7 +330,6 @@ function charger_nouveau_screenshot(url, jeu_sélectionné, dimension_sélection
         const screenshot = $("#screenshot");
         if (screenshot.attr("src") != "./images/chargement.gif") {
             screenshot.attr({
-                "fichier_image_aléatoire": données.fichier,
                 "src": "./images/chargement.gif"
             });
         }
@@ -346,6 +345,10 @@ function charger_nouveau_screenshot(url, jeu_sélectionné, dimension_sélection
                 charger_nouveau_screenshot(url, jeu_sélectionné, dimension_sélectionnée)
             }
         }
+
+        screenshot.attr({
+            "fichier_image_aléatoire": données.fichier,
+        });
 
         const image = new Image();
 
