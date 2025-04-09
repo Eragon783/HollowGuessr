@@ -1,8 +1,7 @@
 communications/
 python_env/
 libwebp/
-
-PRIVÉ.md
+privé/
 
 images/screenshots/**/screenshot.*
 images/screenshots/**/originaux/
