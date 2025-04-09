@@ -7,13 +7,25 @@
         "x": 1728,
         "y": 1852
     },
+    "brumm.webp": {
+        "x": 1750,
+        "y": 586
+    },
     "charm_lover_salubra.webp": {
         "x": 2602,
         "y": 1020
     },
+    "cloth.webp": {
+        "x": 1768,
+        "y": 1400
+    },
     "confessor_jiji.webp": {
         "x": 1997,
         "y": 587
+    },
+    "cornifer.webp": {
+        "x": 1767,
+        "y": 901
     },
     "distant_villagers.webp": {
         "x": 107,
@@ -22,6 +34,10 @@
     "divine.webp": {
         "x": 1725,
         "y": 577
+    },
+    "dreamers.webp": {
+        "x": 474,
+        "y": 717
     },
     "dung_defender.webp": {
         "x": 2829,
@@ -51,6 +67,10 @@
         "x": 1658,
         "y": 693
     },
+    "hornet.webp": {
+        "x": 1059,
+        "y": 780
+    },
     "iselda.webp": {
         "x": 1829,
         "y": 578
@@ -74,6 +94,10 @@
     "millibelle_the_banker.webp": {
         "x": 1124,
         "y": 1430
+    },
+    "mister_mushroom.webp": {
+        "x": 1389,
+        "y": 1508
     },
     "moss_prophet.webp": {
         "x": 1032,
@@ -103,6 +127,10 @@
         "x": 1786,
         "y": 583
     },
+    "quirrel.webp": {
+        "x": 2047,
+        "y": 690
+    },
     "relic_seeker_lemm.webp": {
         "x": 2615,
         "y": 1740
@@ -131,6 +159,14 @@
         "x": 1412,
         "y": 918
     },
+    "the_last_stag.webp": {
+        "x": 2185,
+        "y": 929
+    },
+    "tiso.webp": {
+        "x": 1886,
+        "y": 594
+    },
     "troupe_master_grimm.webp": {
         "x": 1740,
         "y": 577
@@ -154,5 +190,9 @@
     "willoh.webp": {
         "x": 1221,
         "y": 1477
+    },
+    "zote_the_mighty.webp": {
+        "x": 643,
+        "y": 626
     }
 }
