@@ -1,6 +1,7 @@
 communications/
 python_env/
 libwebp/
+matomo/
 privé/
 
 images/screenshots/**/screenshot.*
