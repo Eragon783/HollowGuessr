@@ -326,7 +326,7 @@ function tracer_une_ligne(ligne, point_1, point_2) {
 
 function charger_nouveau_screenshot(url, jeu_sélectionné, dimension_sélectionnée) {
     $.getJSON(url, données => {
-        
+
         const screenshot = $("#screenshot");
         if (screenshot.attr("src") != "./images/chargement.gif") {
             screenshot.attr({
@@ -617,5 +617,81 @@ function mettre_à_jour_les_scores() {
                 }
             })
             .catch(error => console.error("Erreur de chargement des traductions:", error));
+    }
+}
+
+const grub = document.getElementById("larve");
+let clickCount = 0;
+
+grub.addEventListener("click", () => {
+    grub.classList.add("vibration");
+    setTimeout(() => {
+        grub.classList.remove("vibration");
+    }, 300);
+
+    clickCount++;
+
+    if (clickCount === 3) {
+        grub.classList.add("vibration");
+        setTimeout(() => {
+            grub.classList.remove("vibration");
+        }, 300);
+        larves_spawn();
+        clickCount = 0
+    }
+});
+
+function larves_spawn() {
+    const spacing = 25;
+    const screenWidth = window.innerWidth;
+    const larvaCount = Math.floor(screenWidth / spacing);
+
+    for (let i = 0; i < larvaCount; i++) {
+        const larva = document.createElement("img");
+
+        const rand = Math.random();
+        if (rand < 0.9) {
+            larva.src = "./images/larves/larve.webp";
+        } else if (rand < 0.95) {
+            larva.src = "./images/larves/larve_père.webp";
+        } else if (rand < 0.98) {
+            larva.src = "./images/larves/larve_mimic.webp";
+        } else {
+            larva.src = "./images/larves/larve_père_gros.webp";
+        }
+
+        larva.classList.add("larve-tombante");
+
+        const size = Math.random() * 70 + 30;
+        larva.style.width = `${size}px`;
+        larva.style.left = `${Math.random() * 100}vw`;
+
+        let angle = Math.random() * 360;
+        let y = -100;
+        const fallSpeed = 2 + Math.random() * 2;
+        const rotationSpeed = (Math.random() > 0.5 ? 1 : -1) * (20 + Math.random() * 80);
+
+        larva.style.transform = `translateY(${y}px) rotate(${angle}deg)`;
+        document.body.appendChild(larva);
+
+        const delay = Math.random() * 5000; // ⏱ délai aléatoire entre 0 et 1 sec
+
+        setTimeout(() => {
+            function animate() {
+                y += fallSpeed;
+                angle += rotationSpeed * (1 / 60);
+
+                larva.style.transform = `translateY(${y}px) rotate(${angle}deg)`;
+
+                if (y > window.innerHeight + 100) {
+                    larva.remove();
+                    return;
+                }
+
+                requestAnimationFrame(animate);
+            }
+
+            requestAnimationFrame(animate);
+        }, delay);
     }
 }

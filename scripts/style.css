@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Trajan";
     src: url("../polices/trajan.woff2") format("woff2"),
-         url("../polices/trajan.woff") format("woff");
+        url("../polices/trajan.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
     font-family: "Perpetua";
     src: url("../polices/perpetua.woff2") format("woff2"),
-         url("../polices/perpetua.woff") format("woff");
+        url("../polices/perpetua.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -299,7 +299,7 @@ img.emote {
     margin-top: calc(0.3em + 0.7vw);
 }
 
-#statistiques-container #statistiques  {
+#statistiques-container #statistiques {
     margin-bottom: calc(0.3em + 0.7vw);
 }
 
@@ -362,4 +362,49 @@ img.emote {
     footer {
         margin: 0 calc(1em + 7vw);
     }
+}
+
+#larve {
+    pointer-events: all;
+    cursor: pointer;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-5px, 5px);
+    }
+
+    40% {
+        transform: translate(-5px, -5px);
+    }
+
+    60% {
+        transform: translate(5px, 5px);
+    }
+
+    80% {
+        transform: translate(5px, -5px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.vibration {
+    animation: vibrate 0.3s linear;
+}
+
+.larve-tombante {
+    position: fixed;
+    top: -100px;
+    z-index: 999;
+    pointer-events: none;
+    will-change: transform;
+    height: auto;
+    aspect-ratio: auto;
 }
