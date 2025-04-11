@@ -190,7 +190,7 @@ function confirmer_jeu_clic() {
                 $("<div>", {
                     id: "score",
                     class: "élément-éphémère",
-                    html: `<p><span id="animated-score">0</span><small>/100</small></p>
+                    html: `<p><span id="animated-score">0</span><small>/100 <img class='emote' src='./images/geo.webp' alt='Geo' loading='lazy'></small></p>
                            <img class='emote' src='./images/emotes/${emote}.webp'>`
                 }).appendTo("main");
 

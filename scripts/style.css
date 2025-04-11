@@ -241,7 +241,14 @@ img.emote {
     height: calc(1em + 0.1vw);
     width: calc(1em + 0.1vw);
     margin: 0 calc(0.05em + 0.1vw);
-    vertical-align: bottom
+    vertical-align: bottom;
+}
+
+small img.emote {
+    height: calc(0.3em + 0.03vw);
+    width: calc(0.3em + 0.03vw);
+    margin: 0 calc(0.012em + 0.08vw);
+    vertical-align: middle;
 }
 
 #carré {
