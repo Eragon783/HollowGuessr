@@ -102,7 +102,7 @@ footer {
 }
 
 header h1 {
-    font-size: calc(1.6em + 1.4vw);
+    font-size: calc(1.6em + 1.6vw);
     font-weight: bold;
     margin-bottom: calc(0.2em + 0.6vw);
 }
