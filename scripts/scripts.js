@@ -276,6 +276,7 @@ function confirmer_jeu_clic() {
                         pointerEvents: "none",
                         zIndex: 9999
                     });
+                    cercle_proche.attr("seuil_proche", seuil_proche);
 
                     Object.assign(cercle_loin[0].style, {
                         position: "absolute",
@@ -290,6 +291,7 @@ function confirmer_jeu_clic() {
                         pointerEvents: "none",
                         zIndex: 9998
                     });
+                    cercle_loin.attr("seuil_loin", seuil_loin);
                 })
             })
 
@@ -445,6 +447,12 @@ function lancer_le_jeu() {
 }
 
 $(window).resize(() => {
+    setTimeout(() => {
+        ajusterElements();
+    }, 100);
+});
+
+function ajusterElements() {
     if ($("#carré").length) {
         const carte = $("#carte");
         const dimensions_carte = carte[0].getBoundingClientRect();
@@ -475,8 +483,40 @@ $(window).resize(() => {
         });
 
         tracer_une_ligne($("#ligne"), $("#marqueur-réponse"), $("#marqueur-solution"));
+
+        const cercle_proche = document.getElementById("cercle_proche");
+        const cercle_loin = document.getElementById("cercle_loin");
+
+        if (!cercle_proche || !cercle_loin) return;
+
+        const echelle = dimensions_carte.width / carte[0].naturalWidth;
+
+        let rayon_proche = cercle_proche.getAttribute("seuil_proche") * echelle;
+        let rayon_loin = cercle_loin.getAttribute("seuil_loin") * echelle;
+
+        const containerRect = document.getElementById("carte-container").getBoundingClientRect();
+        const marqueurRect = $("#marqueur-solution")[0].getBoundingClientRect();
+
+        const centre = {
+            x: marqueurRect.left - containerRect.left + (marqueurRect.width / 2) - 2,
+            y: marqueurRect.top - containerRect.top + (marqueurRect.height / 2) - 2
+        };
+
+        Object.assign(cercle_proche.style, {
+            width: `${rayon_proche * 2}px`,
+            height: `${rayon_proche * 2}px`,
+            top: `${centre.y}px`,
+            left: `${centre.x}px`
+        });
+
+        Object.assign(cercle_loin.style, {
+            width: `${rayon_loin * 2}px`,
+            height: `${rayon_loin * 2}px`,
+            top: `${centre.y}px`,
+            left: `${centre.x}px`
+        });
     }
-});
+}
 
 const image = $("#carte");
 const loupe = $("#loupe");
