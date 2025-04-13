@@ -1,5 +1,4 @@
 $(function () {
-    mettre_à_jour_les_scores();
     $("#recharger").click(lancer_le_jeu);
 
     let url_bouton_jeux = "./scripts/obtenir_bouton_jeux.php";
@@ -226,7 +225,7 @@ function confirmer_jeu_clic() {
                     }).appendTo("main");
                 }
 
-                localStorage.setItem(`screenshot_${jeu_sélectionné}_${screenshot.attr("fichier_image_aléatoire")}`, score);
+                localStorage.setItem(`screenshot_${jeu_sélectionné}_${dimension_sélectionnée}_${screenshot.attr("fichier_image_aléatoire")}`, score);
                 localStorage.setItem(`screenshot_${jeu_sélectionné}_${screenshot.attr("fichier_image_aléatoire")}_timestamp`, Date.now());
                 mettre_à_jour_les_scores();
 
@@ -383,6 +382,7 @@ function charger_nouveau_screenshot(url, jeu_sélectionné, dimension_sélection
 }
 
 function lancer_le_jeu() {
+    mettre_à_jour_les_scores();
     $(".élément-éphémère").remove();
     $("#carte").css("cursor", "pointer");
 
@@ -561,15 +561,36 @@ function mettre_à_jour_les_scores() {
     const clés_screenshots = Object.keys(localStorage)
         .filter(clé => clé.startsWith("screenshot_") && !clé.endsWith("_timestamp"));
 
+    const regex_texte = `^screenshot_${$("#choix-jeu").val()}_${$("#choix-dimension").val()}_`;
+    const regex = new RegExp(regex_texte);
+
+    const clés_actuelles = clés_screenshots.filter(clé => regex.test(clé))
+
     if (clés_screenshots.length > 0) {
         $("#statistiques .nombre-de-parties .valeur").text(clés_screenshots.length.toLocaleString('fr-FR').replace(/\s/g, "."));
     }
 
+    $("#statistiques-actuelles .nombre-de-parties .valeur").text(clés_actuelles.length.toLocaleString('fr-FR').replace(/\s/g, "."));
+
+    $.getJSON(`./scripts/obtenir_nombre_de_fichiers.php?zone=${$("#choix-jeu").val()}&dimension=${$("#choix-dimension").val() ?? null}`, réponse => {
+        console.log(réponse.nombre_de_fichiers.toLocaleString('fr-FR').replace(/\s/g, "."))
+        $("#statistiques-actuelles .nombre-de-parties .quotient").text(réponse.nombre_de_fichiers.toLocaleString('fr-FR').replace(/\s/g, "."));
+    })
+
     const scores = clés_screenshots.map(clé => parseFloat(localStorage.getItem(clé)))
+        .filter(valeur => !isNaN(valeur));
+
+    const scores_actuels = clés_actuelles.map(clé => parseFloat(localStorage.getItem(clé)))
         .filter(valeur => !isNaN(valeur));
 
     const total_scores = scores.reduce((total, valeur) => total + valeur, 0);
     const moyenne = scores.length ? (total_scores / scores.length).toFixed(1).toLocaleString('fr-FR').replace(/\s/g, ".") : "0.0";
+
+    const total_scores_actuels = scores_actuels.reduce((total, valeur) => total + valeur, 0);
+    const moyenne_actuelle = scores_actuels.length ? (total_scores_actuels / scores_actuels.length).toFixed(1).toLocaleString('fr-FR').replace(/\s/g, ".") : "0.0";
+
+    console.log(total_scores_actuels)
+    console.log(moyenne_actuelle)
 
     if (moyenne !== "0.0") {
         $("#statistiques .moyenne .valeur").text(moyenne);
@@ -577,6 +598,9 @@ function mettre_à_jour_les_scores() {
     if (total_scores !== 0) {
         $("#statistiques .total .valeur").text(total_scores.toLocaleString('fr-FR').replace(/\s/g, "."));
     }
+
+    $("#statistiques-actuelles .moyenne .valeur").text(moyenne_actuelle);
+    $("#statistiques-actuelles .total .valeur").text(total_scores_actuels.toLocaleString('fr-FR').replace(/\s/g, "."));
 
     $.getJSON("./données/zones.json", données => {
         let nombre_fichiers = 0;
@@ -642,11 +666,11 @@ function mettre_à_jour_les_scores() {
                                 <p class='label'>${totalScoreText}</p>
                             </div>
                         `
-                    }).insertAfter("#statistiques-container #statistiques");
+                    }).insertAfter("#statistiques-container #statistiques-actuelles-30");
 
                     $("<p>", {
                         html: last30GamesText
-                    }).insertAfter("#statistiques-container #statistiques");
+                    }).insertAfter("#statistiques-container #statistiques-actuelles-30");
 
                     if (moyenne_derniers_scores !== "0.0") {
                         $("#statistiques-30 .moyenne .valeur").text(moyenne_derniers_scores);
@@ -714,7 +738,7 @@ function larves_spawn() {
         larva.style.transform = `translateY(${y}px) rotate(${angle}deg)`;
         document.body.appendChild(larva);
 
-        const delay = Math.random() * 5000; // ⏱ délai aléatoire entre 0 et 1 sec
+        const delay = Math.random() * 5000;
 
         setTimeout(() => {
             function animate() {
