@@ -168,8 +168,8 @@
         "facteur_de_zoom": 0.4,
         "marqueur": "hollow_knight",
         "score": {
-            "seuil_100": 150,
-            "seuil_0": 750
+            "seuil_100": 100,
+            "seuil_0": 500
         }
     },
     "hollow_knight_items": {

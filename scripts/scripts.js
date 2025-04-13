@@ -273,7 +273,7 @@ function confirmer_jeu_clic() {
                         top: `${centre.y}px`,
                         left: `${centre.x}px`,
                         pointerEvents: "none",
-                        zIndex: 9999
+                        zIndex: 2
                     });
                     cercle_proche.attr("seuil_proche", seuil_proche);
 
@@ -288,7 +288,7 @@ function confirmer_jeu_clic() {
                         top: `${centre.y}px`,
                         left: `${centre.x}px`,
                         pointerEvents: "none",
-                        zIndex: 9998
+                        zIndex: 2
                     });
                     cercle_loin.attr("seuil_loin", seuil_loin);
                 })
