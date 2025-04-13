@@ -573,7 +573,6 @@ function mettre_à_jour_les_scores() {
     $("#statistiques-actuelles .nombre-de-parties .valeur").text(clés_actuelles.length.toLocaleString('fr-FR').replace(/\s/g, "."));
 
     $.getJSON(`./scripts/obtenir_nombre_de_fichiers.php?zone=${$("#choix-jeu").val()}&dimension=${$("#choix-dimension").val() ?? null}`, réponse => {
-        console.log(réponse.nombre_de_fichiers.toLocaleString('fr-FR').replace(/\s/g, "."))
         $("#statistiques-actuelles .nombre-de-parties .quotient").text(réponse.nombre_de_fichiers.toLocaleString('fr-FR').replace(/\s/g, "."));
     })
 
@@ -588,9 +587,6 @@ function mettre_à_jour_les_scores() {
 
     const total_scores_actuels = scores_actuels.reduce((total, valeur) => total + valeur, 0);
     const moyenne_actuelle = scores_actuels.length ? (total_scores_actuels / scores_actuels.length).toFixed(1).toLocaleString('fr-FR').replace(/\s/g, ".") : "0.0";
-
-    console.log(total_scores_actuels)
-    console.log(moyenne_actuelle)
 
     if (moyenne !== "0.0") {
         $("#statistiques .moyenne .valeur").text(moyenne);
