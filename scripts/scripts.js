@@ -335,14 +335,15 @@ function charger_nouveau_screenshot(url, jeu_sélectionné, dimension_sélection
             });
         }
 
-        if (localStorage.getItem("screenshot_" + jeu_sélectionné + "_" + données.fichier) !== null) {
+        if (localStorage.getItem("screenshot_" + jeu_sélectionné + "_" + dimension_sélectionnée + "_" + données.fichier) !== null) {
             timestamp = localStorage.getItem("screenshot_" + jeu_sélectionné + "_" + données.fichier + "_timestamp")
 
             const date_actuelle = Date.now();
             const delta = Math.floor((date_actuelle - timestamp) / 1000);
-            let probabilité = 1 / (1 + Math.exp(delta / 86400));
+            let probabilité = 1 - 1 / (1 + Math.exp((delta - 86400) / 86400));
 
-            if (Math.random() < probabilité) {
+            if (Math.random() > probabilité) {
+                console.log("changement")
                 charger_nouveau_screenshot(url, jeu_sélectionné, dimension_sélectionnée)
             }
         }
@@ -681,7 +682,6 @@ function mettre_à_jour_les_scores() {
 
     if (clés_actuelles.length > 30) {
 
-        console.log(clés_actuelles.length)
         const clés_triées_actuelles = clés_actuelles
             .map(clé => ({ clé, horodatage: localStorage.getItem(clé + "_timestamp") || 0 }))
             .sort((a, b) => b.horodatage - a.horodatage)
@@ -705,8 +705,6 @@ function mettre_à_jour_les_scores() {
                 const averageScoreText = data[lang]["statistiques-score-moyen-30"];
                 const totalScoreText = data[lang]["statistiques-score-total-30"];
                 const last30GamesText = data[lang]["statistiques-texte-actuels-30"];
-
-                console.log("aaa")
 
                 if (!$("#statistiques-actuelles-30").length) {
                     $("<div>", {
