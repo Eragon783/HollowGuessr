@@ -662,11 +662,11 @@ function mettre_à_jour_les_scores() {
                                 <p class='label'>${totalScoreText}</p>
                             </div>
                         `
-                    }).insertAfter("#statistiques-container #statistiques-actuelles-30");
+                    }).insertAfter("#statistiques-container #statistiques-actuelles");
 
                     $("<p>", {
                         html: last30GamesText
-                    }).insertAfter("#statistiques-container #statistiques-actuelles-30");
+                    }).insertAfter("#statistiques-container #statistiques-actuelles");
 
                     if (moyenne_derniers_scores !== "0.0") {
                         $("#statistiques-30 .moyenne .valeur").text(moyenne_derniers_scores);
@@ -677,6 +677,65 @@ function mettre_à_jour_les_scores() {
                 }
             })
             .catch(error => console.error("Erreur de chargement des traductions:", error));
+    }
+
+    if (clés_actuelles.length > 30) {
+
+        console.log(clés_actuelles.length)
+        const clés_triées_actuelles = clés_actuelles
+            .map(clé => ({ clé, horodatage: localStorage.getItem(clé + "_timestamp") || 0 }))
+            .sort((a, b) => b.horodatage - a.horodatage)
+            .slice(0, 30)
+            .map(item => item.clé);
+
+        const derniers_scores_actuels = clés_triées_actuelles.map(clé => parseFloat(localStorage.getItem(clé)))
+            .filter(valeur => !isNaN(valeur));
+
+        const total_derniers_scores_actuels = derniers_scores_actuels.reduce((total, valeur) => total + valeur, 0);
+        const moyenne_derniers_scores_actuels = derniers_scores_actuels.length ? (total_derniers_scores_actuels / derniers_scores_actuels.length).toFixed(1).toLocaleString('fr-FR').replace(/\s/g, ".") : "0.0";
+
+        const defaultLang = "en";
+        const userLang = navigator.language.slice(0, 2);
+
+        fetch("./données/langues.json")
+            .then(response => response.json())
+            .then(data => {
+                const lang = data[userLang] ? userLang : defaultLang;
+
+                const averageScoreText = data[lang]["statistiques-score-moyen-30"];
+                const totalScoreText = data[lang]["statistiques-score-total-30"];
+                const last30GamesText = data[lang]["statistiques-texte-actuels-30"];
+
+                console.log("aaa")
+
+                if (!$("#statistiques-actuelles-30").length) {
+                    $("<div>", {
+                        id: "statistiques-actuelles-30",
+                        html: `
+                            <div class='moyenne'>
+                                <p><span class='valeur'>0</span><small>/<span class='quotient'>100</span></small></p>
+                                <p class='label'>${averageScoreText}</p>
+                            </div>
+                            <div class='total'>
+                                <p><span class='valeur'>0</span><small>/<span class='quotient'>3000</span></small></p>
+                                <p class='label'>${totalScoreText}</p>
+                            </div>
+                        `
+                    }).insertAfter("#statistiques-container #statistiques-30");
+
+                    $("<p>", {
+                        html: last30GamesText
+                    }).insertAfter("#statistiques-container #statistiques-30");
+                }
+                
+                $("#statistiques-actuelles-30 .moyenne .valeur").text(moyenne_derniers_scores_actuels);
+                $("#statistiques-actuelles-30 .total .valeur").text(total_derniers_scores_actuels.toLocaleString('fr-FR').replace(/\s/g, "."));
+            })
+            .catch(error => console.error("Erreur de chargement des traductions:", error));
+    }
+    else {
+        $("#statistiques-actuelles-30").remove();
+        $("#statistiques-container #statistiques-30").next("p").first().remove();
     }
 }
 
