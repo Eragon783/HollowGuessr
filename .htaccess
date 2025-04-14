@@ -1,3 +1,3 @@
-<FilesMatch "\.(jpg|jpeg|png|gif|webp|css|js|woff2|svg|eot|ttf|otf)$">
-  Header set Cache-Control "public, max-age=43200"
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|woff2|eot|ttf|otf)$">
+  Header set Cache-Control "public, max-age=86400"
 </FilesMatch>
