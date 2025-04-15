@@ -725,7 +725,7 @@ function mettre_à_jour_les_scores() {
                         html: last30GamesText
                     }).insertAfter("#statistiques-container #statistiques-30");
                 }
-                
+
                 $("#statistiques-actuelles-30 .moyenne .valeur").text(moyenne_derniers_scores_actuels);
                 $("#statistiques-actuelles-30 .total .valeur").text(total_derniers_scores_actuels.toLocaleString('fr-FR').replace(/\s/g, "."));
             })
@@ -759,7 +759,7 @@ grub.addEventListener("click", () => {
 });
 
 function larves_spawn() {
-    const spacing = 25;
+    const spacing = 20;
     const screenWidth = window.innerWidth;
     const larvaCount = Math.floor(screenWidth / spacing);
 
@@ -781,7 +781,8 @@ function larves_spawn() {
 
         const size = Math.random() * 70 + 30;
         larva.style.width = `${size}px`;
-        larva.style.left = `${Math.random() * 100}vw`;
+        const left = Math.random() * (screenWidth + 100) - 50;
+        larva.style.left = `${left}px`;
 
         let angle = Math.random() * 360;
         let y = -100;
