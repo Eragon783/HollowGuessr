@@ -3,6 +3,7 @@ python_env/
 libwebp/
 matomo/
 privé/
+audit/
 
 images/screenshots/**/screenshot.*
 images/screenshots/**/originaux/
