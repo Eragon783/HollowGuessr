@@ -58,7 +58,7 @@ body::before {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(0.4);
+    filter: brightness(0.35);
     z-index: -1;
 }
 
@@ -72,8 +72,15 @@ h6 {
 }
 
 a {
-    font-weight: bold;
-    text-decoration: none;
+    font-weight: normal;
+    text-decoration: underline;
+    text-decoration-thickness: 0.05em;
+    text-underline-offset: 3px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #bdbdbd;
 }
 
 strong {
