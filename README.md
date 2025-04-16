@@ -33,3 +33,7 @@ Got a bug to report? A cool idea for a new feature? 💡 Want to help improve th
 ## Acknowledgements
 
 A huge thank you to all the **incredible people and projects** whose work has made this site a reality! 🙏 For more shoutouts, check out the [HollowGuessr Acknowledgements Section](https://hollowguessr.alwaysdata.net/)!
+
+## License & Reuse Rights
+
+This website is completely free to use, copy, modify, and share — with no restrictions. All the code in this repository is provided without any license, because I want anyone to be able to do whatever they want with it. No attribution required, but feel free to give credit if you’d like 🙂
