@@ -1,39 +1,53 @@
-# HollowGuessr
+# 🐞 HollowGuessr
 
-Welcome to **HollowGuessr**! Get ready to immerse yourself in the mysterious beauty of Hallownest (and a touch of Pharloom), in this fun game inspired by GeoGuessr! Your quest is simple: figure out where you are by carefully observing the clues around you. The more precise your guess, the more points you'll rack up! Think you can spot every hidden corner of the kingdom? Enjoy the adventure, and happy exploring! 🌟
+Welcome to HollowGuessr — a little adventure through the world of Hollow Knight!  
+Inspired by GeoGuessr, this game invites you to explore the mysterious beauty of Hallownest (and even a glimpse of Pharloom), one location at a time.
 
-## How to Play
+Your goal? Look around, gather clues, and guess where you are.  
+The more accurate you are, the higher your score! Ready to test your knowledge of the kingdom’s nooks and crannies?  
+Enjoy the journey — and happy exploring!
 
-1. Visit the game at [HollowGuessr](https://hollowguessr.alwaysdata.net/).
-2. You'll be placed in a random location within **Hallownest** (and sometimes Pharloom!).
-3. Use the map to guess where you are.
-4. Submit your guess and see how close you were to the correct location! 🎯
-5. The more accurate your guess, the more points you’ll earn. Keep playing to improve your score and explore new areas!
+## 🎮 How to Play
 
-## Features
+1. Head over to [HollowGuessr](https://hollowguessr.alwaysdata.net/)
+2. You'll land in a random spot somewhere in Hallownest (and sometimes Pharloom)
+3. Use the map to make your guess
+4. Submit — and see how close you were!
+5. The closer your guess, the more points you earn. Keep playing to improve your score and discover new places!
 
-- **Integration of revealed zones** from *Hollow Knight: Silksong*  
-- **Over 350 locations** to explore, offering a diverse range of challenges  
-- **Various game modes** featuring items, charms, bosses, NPCs, and zones to place on the map  
-- **Enhanced user experience customization**, including zone selection  
-- **Detailed user score statistics** to track your progress  
-- **No loading times** for a seamless experience  
-- A **sleek and ergonomic interface** that’s easy on the eyes  
-- **Fully responsive design**, optimized for all screen sizes, including mobile devices
-- **Several languages** available (English, French, German, Spanish, Portuguese, Russian)
+## ✨ Features
 
-## Missing Files
+- Explore zones revealed in Silksong for a fresh challenge  
+- Over 350 unique locations from the Hollow Knight universe  
+- Multiple game modes: place items, charms, NPCs, bosses, and more  
+- Customize your experience with zone selection options  
+- Track your progress with detailed score stats  
+- Enjoy a smooth experience with instant transitions (no loading!)  
+- A clean, ergonomic interface made for comfort  
+- Responsive design, great on both desktop and mobile  
+- Available in several languages: English, French, German, Spanish, Portuguese, and Russian
 
-Just a heads-up — some files are missing from this repository because they’re **too large** for GitHub’s limits. 😅 If you need the full set of files, don’t hesitate to reach out! I’ll be happy to share them with you.  
+## 📁 Missing Files
 
-## Contact & Contributing
+Some files aren’t included in this repository due to GitHub’s file size limits.  
+If you’re interested in the full set, feel free to reach out — I’ll be happy to share them with you!
 
-Got a bug to report? A cool idea for a new feature? 💡 Want to help improve the project? Your contributions are more than welcome! Whether you're a developer, designer, or just a passionate *Hollow Knight* fan, I'd be thrilled to have you on board. Feel free to reach out at [hollowguessr@gmail.com](mailto:hollowguessr@gmail.com)!
+## 🔓 License & Reuse
 
-## Acknowledgements
+Feel free to use, copy, modify, or share anything from this website — no restrictions apply. All the code in this repository is made openly available, with no license, because I want you to be able to do whatever you like with it. No attribution is required, though you're always welcome to give credit if you feel like it 🙂
 
-A huge thank you to all the **incredible people and projects** whose work has made this site a reality! 🙏 For more shoutouts, check out the [HollowGuessr Acknowledgements Section](https://hollowguessr.alwaysdata.net/)!
+## 🔒 Privacy & Data
 
-## License & Reuse Rights
+This website does not collect any personal data from its visitors. To help improve the site's performance and reliability, two privacy-conscious tools are used:
+- Matomo (self-hosted): for anonymous traffic analytics. No tracking cookies are used, and IP addresses are anonymized.
+- Sentry: for monitoring technical errors. It may collect anonymized data such as browser type or device to help identify issues.
 
-This website is completely free to use, copy, modify, and share — with no restrictions. All the code in this repository is provided without any license, because I want anyone to be able to do whatever they want with it. No attribution required, but feel free to give credit if you’d like 🙂
+None of this information is used to track you, and nothing personally identifiable is ever stored or shared. These tools are only here to make the site better for everyone.
+
+## 📬 Contact
+
+Found a bug, noticed something odd, or have an idea to make the site even better? I'm always happy to hear from you — whether it's feedback, suggestions, or just a message to say hello. Feel free to reach out at [hollowguessr@gmail.com](mailto:hollowguessr@gmail.com)!
+
+## 🙏 Acknowledgements
+
+A big thank you to all the amazing people and projects whose work made this site possible. To see the full list of credits, head over to the [HollowGuessr Acknowledgements Section](https://hollowguessr.alwaysdata.net/).
