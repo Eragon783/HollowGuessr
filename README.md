@@ -45,6 +45,13 @@ None of this information is used to track you, and nothing personally identifiab
 
 Found a bug, noticed something odd, or have an idea to make the site even better? I'm always happy to hear from you — whether it's feedback, suggestions, or just a message to say hello. Feel free to reach out at [hollowguessr@gmail.com](mailto:hollowguessr@gmail.com)!
 
+## 🌐 Stay Connected
+
+Want to follow the latest updates or chat with other players? Feel free to join the conversation or drop by one of these pages:
+
+- [HollowGuessr on itch.io](https://hollowguessr.itch.io/hollowguessr)
+- [HollowGuessr on jeuxvideo.com](https://www.jeuxvideo.com/forums/42-3016366-75644361-1-0-1-0-hollowguessr-j-ai-cree-un-geoguessr-pour-hollow-knight.htm) 🇫🇷
+
 ## 🙏 Acknowledgements
 
 A big thank you to all the amazing people and projects whose work made this site possible. To see the full list of credits, head over to the [HollowGuessr Acknowledgements Section](https://hollowguessr.alwaysdata.net/).
