@@ -54,4 +54,21 @@ Want to follow the latest updates or chat with other players? Feel free to join 
 
 ## 🙏 Acknowledgements
 
-A big thank you to all the amazing people and projects whose work made this site possible. To see the full list of credits, head over to the [HollowGuessr Acknowledgements Section](https://hollowguessr.alwaysdata.net/).
+A big thank you to all the amazing people and projects whose work has made this site possible! 💙
+
+- [Favicon (by u/LooneLuxxe)](https://www.reddit.com/r/HollowKnight/comments/14a7a92/hollow_knight_custom_desktop_icons_oc/?show=original)
+- [Emotes (by u/sleepytealeaf_art)](https://www.reddit.com/r/HollowKnight/comments/m48tv4/i_made_another_hollow_knight_emote_pack_theyre/?show=original)
+- **Hollow Knight**:
+  - [Sprites from the game (extracts by u/Sumwann)](https://www.reddit.com/r/HollowKnight/comments/cf83u1/all_hollow_knight_sprites_as_of_version_1432/?show=original)
+  - [Stitched Map (by nook)](https://www.hallownest.net/downloads/)
+  - [Official Map (by RainingChain & Co)](https://scripterswar.com/hollowknight/map-sketch)
+- **Hollow Knight: Silksong - Deep Docks (Demo)**:
+  - [Stitched Map (by u/aaronmason13)](https://www.reddit.com/r/HollowKnight/comments/133b06y/silksong_deep_docks_stiched_map/?show=original)
+  - [Official Map (by u/No_Responsibility961)](https://www.reddit.com/r/HollowKnight/comments/14tnak7/map_of_deep_docks_as_seen_in_the_2019_silksong/?show=original)
+- **Hollow Knight: Silksong - Mossy Grotto (Demo)**:
+  - [Stitched Map (by u/Crispycocostar)](https://www.reddit.com/r/HollowKnight/comments/cp1jbj/silksong_a_stitched_together_map_of_the_mossy/?show=original)
+  - [Official Map (by u/Aluomorg)](https://www.reddit.com/r/HollowKnight/comments/d7vnpe/moss_grotto_demo_map/?show=original)
+
+Check out their awesome work!
+
+HollowGuessr is strongly inspired by the [Red Bull GeoGamers concept by RedBull](https://www.youtube.com/watch?v=P9NC9vqB74k&ab_channel=RedBullCheckpoint) (itself inspired by [GeoGuessr](https://www.geoguessr.com/fr)) and based on the [Hollow Knight game by Team Cherry](https://www.hollowknight.com/).
