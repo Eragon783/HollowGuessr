@@ -98,8 +98,7 @@ img {
 
 header,
 main,
-section,
-footer {
+section {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -218,25 +217,10 @@ main button:hover {
     background-color: #3b3b3b;
 }
 
-section h2,
-footer h2 {
+section h2 {
     font-size: calc(1.5em + 1.2vw);
     font-weight: bold;
     margin-bottom: calc(0.2em + 0.6vw);
-}
-
-footer ul {
-    margin: calc(0.2em + 0.6vw) 0;
-}
-
-footer>img:first-child {
-    width: calc(10em + 16vw);
-    margin-bottom: calc(0.2em + 0.6vw);
-}
-
-footer>img:last-child {
-    margin-top: calc(0.8em + 0.2vw);
-    width: calc(10em + 10vw);
 }
 
 body>img {
@@ -340,12 +324,13 @@ small img.emote {
 }
 
 #statistiques-container>img:first-child {
-    width: calc(12em + 15vw);
+    width: calc(10em + 16vw);
+    margin-bottom: calc(0.2em + 0.6vw);
 }
 
 #statistiques-container>img:last-child {
-    width: calc(10em + 13vw);
-    margin-top: calc(0.3em + 0.7vw);
+    margin-top: calc(0.8em + 0.2vw);
+    width: calc(10em + 10vw);
 }
 
 @media screen and (max-width: 1400px) {
@@ -378,8 +363,7 @@ small img.emote {
 
     header,
     main>p,
-    section,
-    footer {
+    section {
         margin: 0 calc(1em + 7vw);
     }
 }
