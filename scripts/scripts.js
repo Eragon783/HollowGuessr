@@ -526,36 +526,43 @@ const image_zoom = $("#zoom");
 const est_appareil_tactile = "ontouchstart" in window || navigator.maxTouchPoints > 0;
 
 if (!est_appareil_tactile) {
-    $.getJSON("./données/zones.json", données => {
-        image.on("mousemove", e => {
-            if (!$("#score").length) {
-                const rect = image[0].getBoundingClientRect();
-                const { clientX: x, clientY: y } = e;
-                const { naturalWidth: largeur_naturelle, naturalHeight: hauteur_naturelle } = image[0];
-                const { width: largeur_affichée, height: hauteur_affichée } = rect;
+    const attendre_choix_jeu = setInterval(() => {
+        const choix_jeu = $("#choix-jeu");
+        if (choix_jeu.length) {
+            clearInterval(attendre_choix_jeu);
 
-                const facteur_x = largeur_naturelle / largeur_affichée;
-                const facteur_y = hauteur_naturelle / hauteur_affichée;
+            $.getJSON("./données/zones.json", données => {
+                image.on("mousemove", e => {
+                    if (!$("#score").length) {
+                        const rect = image[0].getBoundingClientRect();
+                        const { clientX: x, clientY: y } = e;
+                        const { naturalWidth: largeur_naturelle, naturalHeight: hauteur_naturelle } = image[0];
+                        const { width: largeur_affichée, height: hauteur_affichée } = rect;
 
-                const facteur_zoom = parseFloat(données[$("#choix-jeu").val()]["facteur_de_zoom"]);
+                        const facteur_x = largeur_naturelle / largeur_affichée;
+                        const facteur_y = hauteur_naturelle / hauteur_affichée;
 
-                image_zoom.css({
-                    width: largeur_naturelle * facteur_zoom + "px",
-                    height: hauteur_naturelle * facteur_zoom + "px",
-                    left: -(x - rect.left) * facteur_x * facteur_zoom + loupe.width() / 2 + "px",
-                    top: -(y - rect.top) * facteur_y * facteur_zoom + loupe.height() / 2 + "px"
+                        const facteur_zoom = parseFloat(données[choix_jeu.val()]["facteur_de_zoom"]);
+
+                        image_zoom.css({
+                            width: largeur_naturelle * facteur_zoom + "px",
+                            height: hauteur_naturelle * facteur_zoom + "px",
+                            left: -(x - rect.left) * facteur_x * facteur_zoom + loupe.width() / 2 + "px",
+                            top: -(y - rect.top) * facteur_y * facteur_zoom + loupe.height() / 2 + "px"
+                        });
+
+                        loupe.css({
+                            left: x - rect.left - loupe.width() / 2 + "px",
+                            top: y - rect.top - loupe.height() / 2 + "px",
+                            display: facteur_zoom !== 0 ? "block" : "none"
+                        });
+                    }
                 });
+            });
 
-                loupe.css({
-                    left: x - rect.left - loupe.width() / 2 + "px",
-                    top: y - rect.top - loupe.height() / 2 + "px",
-                    display: facteur_zoom !== 0 ? "block" : "none"
-                });
-            }
-        });
-    });
-
-    image.on("mouseleave", () => loupe.css("display", "none"));
+            image.on("mouseleave", () => loupe.css("display", "none"));
+        }
+    }, 100);
 }
 
 function mettre_à_jour_les_scores() {
