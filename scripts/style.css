@@ -299,10 +299,6 @@ small img.emote {
     width: 1000px;
 }
 
-#statistiques-container {
-    margin-bottom: calc(0.8em + 1.4vw);
-}
-
 #statistiques-container #statistiques,
 #statistiques-container #statistiques-30,
 #statistiques-container #statistiques-actuelles,
