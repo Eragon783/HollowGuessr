@@ -1,11 +1,8 @@
 # 🐞 HollowGuessr
 
-Welcome to HollowGuessr — a little adventure through the world of Hollow Knight!  
-Inspired by GeoGuessr, this game invites you to explore the mysterious beauty of Hallownest (and even a glimpse of Pharloom), one location at a time.
+Welcome to HollowGuessr — a little adventure through the world of Hollow Knight! Inspired by GeoGuessr, this game invites you to explore the mysterious beauty of Hallownest (and even a glimpse of Pharloom), one location at a time.
 
-Your goal? Look around, gather clues, and guess where you are.  
-The more accurate you are, the higher your score! Ready to test your knowledge of the kingdom’s nooks and crannies?  
-Enjoy the journey — and happy exploring!
+Your goal? Look around, gather clues, and guess where you are. The more accurate you are, the higher your score! Ready to test your knowledge of the kingdom’s nooks and crannies? Enjoy the journey — and happy exploring!
 
 ## 🎮 How to Play
 
