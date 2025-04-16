@@ -20,6 +20,10 @@ $(function () {
         .then(data => {
             const lang = data[userLang] ? userLang : defaultLang;
             applyTranslations(data[lang]);
+
+            if (["fr", "de", "es", "pt", "ru"].includes(lang)) {
+                document.documentElement.lang = lang;
+            }
         })
         .catch(error => console.error("Erreur de chargement des traductions:", error));
 });
