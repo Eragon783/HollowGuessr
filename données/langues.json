@@ -20,7 +20,8 @@
         "statistiques-score-total-30": "Total score",
         "statistiques-texte-actuels": "For the current parameters:",
         "statistiques-texte-30": "For your last 30 games:",
-        "statistiques-texte-actuels-30": "For your last 30 games with the current parameters:"
+        "statistiques-texte-actuels-30": "For your last 30 games with the current parameters:",
+        "github": "View the source on <a href='https://github.com/Eragon783/HollowGuessr' target='_blank'>GitHub</a>"
     },
     "fr": {
         "title": "HollowGuessr - Testez vos connaissances sur l'univers de Hollow Knight",
@@ -43,7 +44,8 @@
         "statistiques-score-total-30": "Score total",
         "statistiques-texte-actuels": "Pour les paramètres actuels :",
         "statistiques-texte-30": "Pour vos 30 dernières parties :",
-        "statistiques-texte-actuels-30": "Pour vos 30 dernières parties avec les paramètres actuels :"
+        "statistiques-texte-actuels-30": "Pour vos 30 dernières parties avec les paramètres actuels :",
+        "github": "Voir le code source sur <a href='https://github.com/Eragon783/HollowGuessr' target='_blank'>GitHub</a>"
     },
     "es": {
         "title": "HollowGuessr - Pon a prueba tus conocimientos sobre el mundo de Hollow Knight",
@@ -66,7 +68,8 @@
         "statistiques-score-total-30": "Puntuación total",
         "statistiques-texte-actuels": "Para los parámetros actuales:",
         "statistiques-texte-30": "Para tus últimas 30 partidas:",
-        "statistiques-texte-actuels-30": "Para tus últimas 30 partidas con los parámetros actuales:"
+        "statistiques-texte-actuels-30": "Para tus últimas 30 partidas con los parámetros actuales:",
+        "github": "Ver el código fuente en <a href='https://github.com/Eragon783/HollowGuessr' target='_blank'>GitHub</a>"
     },
     "de": {
         "title": "HollowGuessr - Teste dein Wissen über die Welt von Hollow Knight",
@@ -89,7 +92,8 @@
         "statistiques-score-total-30": "Gesamtpunktzahl",
         "statistiques-texte-actuels": "Für die aktuellen Parameter:",
         "statistiques-texte-30": "Für deine letzten 30 Spiele:",
-        "statistiques-texte-actuels-30": "Für deine letzten 30 Spiele mit den aktuellen Parametern:"
+        "statistiques-texte-actuels-30": "Für deine letzten 30 Spiele mit den aktuellen Parametern:",
+        "github": "Quellcode ansehen auf <a href='https://github.com/Eragon783/HollowGuessr' target='_blank'>GitHub</a>"
     },
     "pt": {
         "title": "HollowGuessr - Teste os seus conhecimentos sobre o mundo de Hollow Knight",
@@ -112,7 +116,8 @@
         "statistiques-score-total-30": "Pontuação total",
         "statistiques-texte-actuels": "Para os parâmetros atuais:",
         "statistiques-texte-30": "Para seus últimos 30 jogos:",
-        "statistiques-texte-actuels-30": "Para seus últimos 30 jogos com os parâmetros atuais:"
+        "statistiques-texte-actuels-30": "Para seus últimos 30 jogos com os parâmetros atuais:",
+        "github": "Ver o código-fonte no <a href='https://github.com/Eragon783/HollowGuessr' target='_blank'>GitHub</a>"
     },
     "ru": {
         "title": "HollowGuessr - Проверьте свои знания о мире Hollow Knight",
@@ -135,6 +140,7 @@
         "statistiques-score-total-30": "Общий счёт",
         "statistiques-texte-actuels": "Для текущих параметров:",
         "statistiques-texte-30": "За ваши последние 30 игр:",
-        "statistiques-texte-actuels-30": "Для ваших последних 30 игр с текущими параметрами:"
+        "statistiques-texte-actuels-30": "Для ваших последних 30 игр с текущими параметрами:",
+        "github": "Посмотреть исходный код на <a href='https://github.com/Eragon783/HollowGuessr' target='_blank'>GitHub</a>"
     }
 }
