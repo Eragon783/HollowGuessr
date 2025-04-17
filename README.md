@@ -26,7 +26,11 @@ Your goal? Look around, gather clues, and guess where you are. The more accurate
 
 ## 📁 Missing Files
 
-Some files aren’t included in this repository due to GitHub’s file size limits.  
+Some files aren’t included in this repository due to GitHub’s file size limits. The following folders or file types are excluded (as listed in `.gitignore`):
+
+- `images/screenshots/**/screenshot.*` — full-resolution screenshots of areas in the game
+- `images/screenshots/**/screenshots_250/` — 250×250 pixel cropped images extracted from the full-resolution screenshots
+
 If you’re interested in the full set, feel free to reach out — I’ll be happy to share them with you!
 
 ## 🔓 License & Reuse
