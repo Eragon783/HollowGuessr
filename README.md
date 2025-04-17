@@ -62,6 +62,7 @@ A big thank you to all the amazing people and projects whose work has made this 
 
 - [Favicon (by u/LooneLuxxe)](https://www.reddit.com/r/HollowKnight/comments/14a7a92/hollow_knight_custom_desktop_icons_oc/?show=original)
 - [Emotes (by u/sleepytealeaf_art)](https://www.reddit.com/r/HollowKnight/comments/m48tv4/i_made_another_hollow_knight_emote_pack_theyre/?show=original)
+- [Hollow Knight Wiki](https://hollowknight.wiki/w/Hollow_Knight_Wiki) — for invaluable assets, background images, game information, and overall support throughout the project
 - **Hollow Knight**:
   - [Sprites from the game (extracts by u/Sumwann)](https://www.reddit.com/r/HollowKnight/comments/cf83u1/all_hollow_knight_sprites_as_of_version_1432/?show=original)
   - [Stitched Map (by nook)](https://www.hallownest.net/downloads/)
