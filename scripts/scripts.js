@@ -175,7 +175,10 @@ function confirmer_jeu_clic() {
                     }
                 }).appendTo("main");
 
-                marqueur_solution.on("load", () => {
+                Promise.all([
+                    attendre_chargement(marqueur_réponse),
+                    attendre_chargement(marqueur_solution)
+                ]).then(() => {
                     const ligne = $("<div>", { id: "ligne", class: "élément-éphémère" }).appendTo("main");
                     tracer_une_ligne(ligne, marqueur_réponse, marqueur_solution);
                 });
@@ -823,4 +826,14 @@ function larves_spawn() {
             requestAnimationFrame(animate);
         }, delay);
     }
+}
+
+function attendre_chargement(element) {
+    return new Promise(resolve => {
+        if (element[0].complete) {
+            resolve();
+        } else {
+            element.on("load", resolve);
+        }
+    });
 }
