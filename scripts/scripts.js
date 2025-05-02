@@ -490,7 +490,10 @@ function ajusterElements() {
             left: screenshot.offset().left + dimensions_screenshot.height / 2 - hauteur / 2 + "px"
         });
 
-        tracer_une_ligne($("#ligne"), $("#marqueur-réponse"), $("#marqueur-solution"));
+        const ligne = $("#ligne");
+        if (ligne.length > 0) {
+            tracer_une_ligne(ligne, $("#marqueur-réponse"), $("#marqueur-solution"));
+        }
 
         const cercle_proche = document.getElementById("cercle_proche");
         const cercle_loin = document.getElementById("cercle_loin");
