@@ -54,6 +54,7 @@ Found a bug, noticed something odd, or have an idea to make the site even better
 Want to follow the latest updates or chat with other players? Feel free to join the conversation or drop by one of these pages:
 
 - [HollowGuessr on itch.io](https://hollowguessr.itch.io/hollowguessr)
+- [HollowGuessr on Reddit](https://www.reddit.com/r/HollowKnight/comments/1ko3cl3/fan_project_hollowguessr_a_geoguessrstyle_game/)
 - [HollowGuessr on jeuxvideo.com](https://www.jeuxvideo.com/forums/42-3016366-75644361-1-0-1-0-hollowguessr-j-ai-cree-un-geoguessr-pour-hollow-knight.htm) 🇫🇷
 
 ## 🙏 Acknowledgements
