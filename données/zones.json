@@ -225,7 +225,7 @@
         "id": "hollow_knight_areas",
         "type": "quiz",
         "favicon": "hollow_knight",
-        "facteur_de_zoom": 0.4,
+        "facteur_de_zoom": 0,
         "marqueur": "hollow_knight",
         "score": {
             "seuil_100": 150,
