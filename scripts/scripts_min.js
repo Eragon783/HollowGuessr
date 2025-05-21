@@ -53,5 +53,5 @@ const grub=document.getElementById("larve");let clickCount=0;grub.addEventListen
 larva.classList.add("larve-tombante");const size=Math.random()*70+30;larva.style.width=`${size}px`;const left=Math.random()*(screenWidth+100)-50;larva.style.left=`${left}px`;let angle=Math.random()*360;let y=-100;const fallSpeed=2+Math.random()*2;const rotationSpeed=(Math.random()>0.5?1:-1)*(20+Math.random()*80);larva.style.transform=`translateY(${y}px) rotate(${angle}deg)`;document.body.appendChild(larva);const delay=Math.random()*5000;setTimeout(()=>{function animate(){y+=fallSpeed;angle+=rotationSpeed*(1/60);larva.style.transform=`translateY(${y}px) rotate(${angle}deg)`;if(y>window.innerHeight+100){larva.remove();return;}
 requestAnimationFrame(animate);}
 requestAnimationFrame(animate);},delay);}}
-function attendre_chargement(element){return new Promise(resolve=>{if(!element||!element[0]){reject();return;}
+function attendre_chargement(element){return new Promise((resolve,reject)=>{if(!element||!element[0]){reject();return;}
 if(element[0].complete){resolve();}else{element.on("load",resolve);}});}

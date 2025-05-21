@@ -832,7 +832,7 @@ function larves_spawn() {
 }
 
 function attendre_chargement(element) {
-    return new Promise(resolve => {
+    return new Promise((resolve, reject) => {
         if (!element || !element[0]) {
             reject();
             return;
