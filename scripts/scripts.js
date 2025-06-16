@@ -306,6 +306,7 @@ function confirmer_jeu_clic() {
 }
 
 function tracer_une_ligne(ligne, point_1, point_2) {
+    if (!point_1?.[0] || !point_2?.[0]) return;
     const rect_1 = point_1[0].getBoundingClientRect();
     const rect_2 = point_2[0].getBoundingClientRect();
 
